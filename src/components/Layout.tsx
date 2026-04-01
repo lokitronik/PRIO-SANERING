@@ -16,7 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-white text-midnight font-sans antialiased">
       {/* Global Sticky Header */}
-      <nav className="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-midnight/5 py-4 px-6 md:px-12 flex justify-between items-center">
+      <nav className="fixed top-0 w-full z-[9999] bg-white/70 backdrop-blur-xl border-b border-midnight/5 py-4 px-6 md:px-12 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <Logo className="scale-75 md:scale-90 origin-left" />
         </Link>
@@ -47,7 +47,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="fixed inset-0 z-40 bg-white pt-24 px-6 flex flex-col gap-6 text-xl font-bold"
+          className="fixed inset-0 z-[9998] bg-white pt-24 px-6 flex flex-col gap-6 text-xl font-bold"
         >
           <Link to="/">Hem</Link>
           <Link to="/tjanster">Tjänster</Link>
@@ -82,8 +82,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li><Link to="/tjanster/sanering-dodstall" className="hover:text-cyan-accent transition-colors">Sanering vid dödsfall</Link></li>
               <li><Link to="/tjanster/traumasanering" className="hover:text-cyan-accent transition-colors">Traumasanering</Link></li>
               <li><Link to="/tjanster/luktsanering" className="hover:text-cyan-accent transition-colors">Luktsanering</Link></li>
-              <li><Link to="/tjanster/invisible-cleaning" className="hover:text-cyan-accent transition-colors">Invisible Cleaning</Link></li>
               <li><Link to="/tjanster/teknisk-rengoring" className="hover:text-cyan-accent transition-colors">Teknisk rengöring</Link></li>
+              <li><Link to="/tjanster/luktsanering" className="hover:text-cyan-accent transition-colors">Lasersanering</Link></li>
+              <li><Link to="/tjanster/technical-cleaning-b2b" className="hover:text-cyan-accent transition-colors">Technical Cleaning B2B</Link></li>
             </ul>
             <h4 className="font-bold mt-8 mb-6 uppercase tracking-widest text-xs text-midnight/40">Förebyggande</h4>
             <ul className="space-y-4 text-sm font-medium text-midnight/70">

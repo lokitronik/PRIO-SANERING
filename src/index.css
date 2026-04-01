@@ -31,21 +31,4 @@
 /* Anti Gravity 3.1 Easing */
 .ag-lift {
   transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
-
-nav, header {
-  position: relative !important;
-  z-index: 9999 !important;
-  pointer-events: auto !important;
-}
-
-nav a, nav button {
-  cursor: pointer !important;
-  display: inline-block !important;
-  position: relative !important;
-  z-index: 10000 !important;
-}
-
-.motion-container {
-  z-index: 1 !important;
-}
 }

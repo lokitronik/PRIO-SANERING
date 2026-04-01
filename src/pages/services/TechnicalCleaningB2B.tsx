@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Helmet } from "react-helmet-async";
-import { Droplets, ShieldCheck, Phone, Hotel, Building2, UserCheck } from "lucide-react";
+import { ShieldCheck, Phone, Hotel, Building2, UserCheck, Zap, Microscope } from "lucide-react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -9,12 +9,12 @@ const fadeInUp = {
 };
 
 const features = [
-  { icon: <Hotel className="w-8 h-8 text-cyan-accent" />, title: "Hotell & Hospitality", desc: "Säkerställ en smittfri miljö för dina gäster med våra premium desinfektionsprotokoll." },
-  { icon: <Building2 className="w-8 h-8 text-cyan-accent" />, title: "Offentliga Miljöer", desc: "Effektiv sanering av kontor, skolor och andra ytor med hög genomströmning." },
-  { icon: <UserCheck className="w-8 h-8 text-cyan-accent" />, title: "Certifierad Trygghet", desc: "Vi utfärdar intyg som visar att lokalen har genomgått en professionell sanering." }
+  { icon: <Hotel className="w-8 h-8 text-cyan-accent" />, title: "Hotell & Airbnb", desc: "Säkerställ en smittfri miljö för dina gäster med medicinsk sterilisering och Biosäkerhetsintyg." },
+  { icon: <Microscope className="w-8 h-8 text-cyan-accent" />, title: "ATP-mätning", desc: "Vetenskaplig verifiering av renhetsgraden för att garantera en biologiskt säker miljö." },
+  { icon: <ShieldCheck className="w-8 h-8 text-cyan-accent" />, title: "Biosäkerhetsintyg", desc: "Vi utfärdar ett intyg efter varje uppdrag som garanterar säkerheten för gäster och personal." }
 ];
 
-export default function InvisibleCleaning() {
+export default function TechnicalCleaningB2B() {
   return (
     <motion.div 
       initial={{ opacity: 0 }}
@@ -23,18 +23,18 @@ export default function InvisibleCleaning() {
       className="py-24 px-6 md:px-12 max-w-7xl mx-auto"
     >
       <Helmet>
-        <title>Invisible Cleaning | Prio Sanering AB - Premium Desinfektion</title>
-        <meta name="description" content="Premium desinfektionstjänster för hotell och B2B. Vi använder elektrostatisk sprutning för att eliminera 99,9% av alla patogener." />
-        <meta name="keywords" content="invisible cleaning, desinfektion hotell, elektrostatisk sprutning, sanering hotellrum, smittskydd företag" />
+        <title>Technical Cleaning B2B | Prio Sanering AB - Biosäkerhet</title>
+        <meta name="description" content="Medicinsk sterilisering med VHP och vetenskaplig verifiering genom ATP-mätning för hotell och Airbnb. Vi utfärdar Biosäkerhetsintyg." />
+        <meta name="keywords" content="technical cleaning b2b, biosäkerhet hotell, VHP sterilisering, ATP-mätning, sanering airbnb, smittskydd företag" />
       </Helmet>
       <motion.div 
         className="text-center mb-20"
         {...fadeInUp}
       >
-        <Droplets className="w-16 h-16 text-cyan-accent mx-auto mb-8" />
-        <h1 className="text-5xl md:text-6xl font-extrabold text-midnight mb-6">Invisible Cleaning</h1>
+        <ShieldCheck className="w-16 h-16 text-cyan-accent mx-auto mb-8" />
+        <h1 className="text-5xl md:text-6xl font-extrabold text-midnight mb-6">Technical Cleaning B2B</h1>
         <p className="text-xl text-midnight/60 max-w-3xl mx-auto font-light leading-relaxed">
-          Premium desinfektion för B2B och hotellsektorn. Vi eliminerar det osynliga hotet – virus, bakterier och osynliga patogener.
+          Biosäkerhet för Hotell & Airbnb. Vi använder medicinsk sterilisering med VHP (Vaporized Hydrogen Peroxide) för att garantera en biologiskt säker miljö.
         </p>
       </motion.div>
 
@@ -55,22 +55,22 @@ export default function InvisibleCleaning() {
 
       <div className="bg-midnight text-white p-12 md:p-20 rounded-[3rem] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <motion.div {...fadeInUp}>
-          <h2 className="text-4xl font-bold mb-8">Varför Invisible Cleaning?</h2>
+          <h2 className="text-4xl font-bold mb-8">Varför Technical Cleaning B2B?</h2>
           <p className="text-lg font-light opacity-80 mb-10 leading-relaxed">
-            I en värld där hygienkraven ständigt ökar räcker det inte med vanlig städning. Vår "Invisible Cleaning" går djupare och eliminerar risker som det blotta ögat inte kan se. Vi använder avancerad teknik som elektrostatisk sprutning och UV-C-desinfektion för att nå alla ytor.
+            Vi erbjuder en vetenskapligt verifierad metod för att säkerställa biosäkerhet i kommersiella lokaler. Vår metod med VHP eliminerar 99,99% av alla patogener och vi verifierar resultatet med ATP-mätning.
           </p>
           <ul className="space-y-6">
             <li className="flex items-start gap-4">
               <ShieldCheck className="w-6 h-6 text-cyan-accent flex-shrink-0" />
-              <p className="font-light opacity-80">99.99% eliminering av virus och bakterier.</p>
+              <p className="font-light opacity-80">Medicinsk sterilisering med VHP-teknik.</p>
             </li>
             <li className="flex items-start gap-4">
               <ShieldCheck className="w-6 h-6 text-cyan-accent flex-shrink-0" />
-              <p className="font-light opacity-80">Snabbt och effektivt – lokalerna kan tas i bruk kort efter behandling.</p>
+              <p className="font-light opacity-80">Vetenskaplig verifiering genom ATP-mätning.</p>
             </li>
             <li className="flex items-start gap-4">
               <ShieldCheck className="w-6 h-6 text-cyan-accent flex-shrink-0" />
-              <p className="font-light opacity-80">Miljövänliga och godkända desinfektionsmedel.</p>
+              <p className="font-light opacity-80">Utfärdande av Biosäkerhetsintyg efter varje uppdrag.</p>
             </li>
           </ul>
         </motion.div>
@@ -80,7 +80,7 @@ export default function InvisibleCleaning() {
           transition={{ ...fadeInUp.transition, delay: 0.2 }}
         >
           <h3 className="text-2xl font-bold mb-6">Boka en konsultation</h3>
-          <p className="opacity-60 mb-10 font-light">Låt oss hjälpa dig att skapa en tryggare miljö för dina anställda och gäster.</p>
+          <p className="opacity-60 mb-10 font-light">Låt oss hjälpa dig att skapa en tryggare miljö för dina gäster och personal.</p>
           <a 
             href="tel:0101234567" 
             className="inline-flex items-center gap-3 bg-cyan-accent text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-cyan-accent/90 transition-all"
