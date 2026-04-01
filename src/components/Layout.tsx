@@ -1,0 +1,114 @@
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { motion } from "motion/react";
+import { Phone, Menu, X } from "lucide-react";
+import Logo from "./Logo";
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setIsMenuOpen(false);
+  }, [location.pathname]);
+
+  return (
+    <div className="min-h-screen bg-white text-midnight font-sans antialiased">
+      {/* Global Sticky Header */}
+      <nav className="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-midnight/5 py-4 px-6 md:px-12 flex justify-between items-center">
+        <Link to="/" className="flex items-center">
+          <Logo className="scale-75 md:scale-90 origin-left" />
+        </Link>
+
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center gap-8 text-sm font-semibold">
+          <Link to="/" className={`hover:text-cyan-accent transition-colors ${location.pathname === "/" ? "text-cyan-accent" : ""}`}>Hem</Link>
+          <Link to="/tjanster" className={`hover:text-cyan-accent transition-colors ${location.pathname.startsWith("/tjanster") ? "text-cyan-accent" : ""}`}>Tjänster</Link>
+          <Link to="/om-oss" className={`hover:text-cyan-accent transition-colors ${location.pathname === "/om-oss" ? "text-cyan-accent" : ""}`}>Om Oss</Link>
+          <Link to="/kontakt" className={`hover:text-cyan-accent transition-colors ${location.pathname === "/kontakt" ? "text-cyan-accent" : ""}`}>Kontakt</Link>
+          <a 
+            href="tel:0101234567" 
+            className="pulse-cyan bg-cyan-accent text-white px-6 py-2.5 rounded-full font-semibold flex items-center gap-2"
+          >
+            <Phone className="w-4 h-4" />
+            010-XXX XX XX
+          </a>
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <button className="md:hidden text-midnight" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          {isMenuOpen ? <X /> : <Menu />}
+        </button>
+      </nav>
+
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="fixed inset-0 z-40 bg-white pt-24 px-6 flex flex-col gap-6 text-xl font-bold"
+        >
+          <Link to="/">Hem</Link>
+          <Link to="/tjanster">Tjänster</Link>
+          <Link to="/om-oss">Om Oss</Link>
+          <Link to="/kontakt">Kontakt</Link>
+          <a href="tel:0101234567" className="text-cyan-accent flex items-center gap-2">
+            <Phone className="w-5 h-5" />
+            010-XXX XX XX
+          </a>
+        </motion.div>
+      )}
+
+      {/* Main Content with Morphing Transition */}
+      <main className="pt-20">
+        {children}
+      </main>
+
+      {/* Footer */}
+      <footer className="py-20 px-6 md:px-12 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div className="col-span-1 md:col-span-2">
+            <Link to="/" className="inline-block mb-8">
+              <Logo className="scale-75 md:scale-90 origin-left" />
+            </Link>
+            <p className="text-midnight/60 font-light leading-relaxed max-w-md">
+              Prio Sanering AB är Sveriges ledande specialist på sanering av extrema miljöer. Vi kombinerar teknisk expertis med djup empati och absolut diskretion.
+            </p>
+          </div>
+          <div>
+            <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-midnight/40">Kärntjänster</h4>
+            <ul className="space-y-4 text-sm font-medium text-midnight/70">
+              <li><Link to="/tjanster/sanering-dodstall" className="hover:text-cyan-accent transition-colors">Sanering vid dödsfall</Link></li>
+              <li><Link to="/tjanster/traumasanering" className="hover:text-cyan-accent transition-colors">Traumasanering</Link></li>
+              <li><Link to="/tjanster/luktsanering" className="hover:text-cyan-accent transition-colors">Luktsanering</Link></li>
+              <li><Link to="/tjanster/invisible-cleaning" className="hover:text-cyan-accent transition-colors">Invisible Cleaning</Link></li>
+              <li><Link to="/tjanster/teknisk-rengoring" className="hover:text-cyan-accent transition-colors">Teknisk rengöring</Link></li>
+            </ul>
+            <h4 className="font-bold mt-8 mb-6 uppercase tracking-widest text-xs text-midnight/40">Förebyggande</h4>
+            <ul className="space-y-4 text-sm font-medium text-midnight/70">
+              <li><Link to="/tjanster/svaratkomliga-ytor" className="hover:text-cyan-accent transition-colors">Svåråtkomliga ytor</Link></li>
+              <li><Link to="/tjanster/bird-blocker" className="hover:text-cyan-accent transition-colors">Bird Blocker</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-midnight/40">Företaget</h4>
+            <ul className="space-y-4 text-sm font-medium text-midnight/70">
+              <li><Link to="/om-oss" className="hover:text-cyan-accent transition-colors">Om Oss</Link></li>
+              <li><Link to="/om-oss#minneshantering" className="hover:text-cyan-accent transition-colors">Minneshantering</Link></li>
+              <li><Link to="/kontakt" className="hover:text-cyan-accent transition-colors">Kontakt</Link></li>
+              <li><a href="tel:0101234567" className="hover:text-cyan-accent transition-colors">Jour dygnet runt</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto pt-8 border-t border-midnight/5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-midnight/40">
+          <div>© 2026 Prio Sanering AB. Alla rättigheter förbehållna.</div>
+          <div className="flex gap-6">
+            <span>Integritetspolicy</span>
+            <span>Allmänna villkor</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
