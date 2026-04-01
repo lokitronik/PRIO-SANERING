@@ -42,7 +42,7 @@ const coreServices = [
   },
   {
     title: "Technical Cleaning B2B (Biosäkerhet för Hotell & Airbnb)",
-    description: "Medicinsk sterilisering med VHP (Vaporized Hydrogen Peroxide) och vetenskaplig verifiering genom ATP-mätning. Vi utfärdar ett Biosäkerhetsintyg efter varje uppdrag som garanterar en biologiskt säker miljö för gäster och personal samt förlänger inventariernas livslängd.",
+    description: "Medicinsk sterilisering med VHP (Vaporized Hydrogen Peroxide), inspektion med violett ljus och vetenskaplig verifiering genom ATP-mätning. Vi utfärdar ett Biosäkerhetsintyg efter varje uppdrag som garanterar en biologiskt säker miljö för gäster och personal samt förlänger inventariernas livslängd.",
     icon: <ShieldCheck className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/technical-cleaning-b2b"
   }
