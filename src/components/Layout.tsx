@@ -82,7 +82,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li><Link to="/tjanster/sanering-dodstall" className="hover:text-cyan-accent transition-colors">Sanering vid dödsfall</Link></li>
               <li><Link to="/tjanster/traumasanering" className="hover:text-cyan-accent transition-colors">Traumasanering</Link></li>
               <li><Link to="/tjanster/luktsanering" className="hover:text-cyan-accent transition-colors">Luktsanering</Link></li>
-              <li><Link to="/tjanster/teknisk-rengoring" className="hover:text-cyan-accent transition-colors">Teknisk rengöring</Link></li>
               <li><Link to="/tjanster/luktsanering" className="hover:text-cyan-accent transition-colors">Lasersanering</Link></li>
               <li><Link to="/tjanster/technical-cleaning-b2b" className="hover:text-cyan-accent transition-colors">Technical Cleaning B2B</Link></li>
             </ul>

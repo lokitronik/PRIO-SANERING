@@ -15,7 +15,8 @@ const protocol = [
   { step: "4", title: "Skadedjursbekämpning", desc: "Vid behov, eliminering av insekter och skadedjur." },
   { step: "5", title: "Deodorisering", desc: "Teknisk luktsanering på molekylär nivå." },
   { step: "6", title: "Minneshantering", desc: "Respektfull identifiering och hantering av personliga tillhörigheter." },
-  { step: "7", title: "Certifierad återställning", desc: "Slutlig kontroll och utfärdande av saneringsintyg." }
+  { step: "7", title: "Certifierad återställning", desc: "Slutlig kontroll och utfärdande av saneringsintyg." },
+  { step: "8", title: "Teknisk rengöring (Tillval)", desc: "Specialiserad rengöring av tekniska miljöer, maskiner och övriga ytor i bostaden för en komplett återställning." }
 ];
 
 export default function DeathSanitization() {

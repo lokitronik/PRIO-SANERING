@@ -16,7 +16,6 @@ import OdorSanitization from "./pages/services/OdorSanitization";
 import TechnicalCleaningB2B from "./pages/services/TechnicalCleaningB2B";
 import HardToReachDisinfection from "./pages/services/HardToReachDisinfection";
 import BirdBlocker from "./pages/services/BirdBlocker";
-import TechnicalCleaning from "./pages/services/TechnicalCleaning";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -32,7 +31,6 @@ function AnimatedRoutes() {
         <Route path="/tjanster/technical-cleaning-b2b" element={<TechnicalCleaningB2B />} />
         <Route path="/tjanster/svaratkomliga-ytor" element={<HardToReachDisinfection />} />
         <Route path="/tjanster/bird-blocker" element={<BirdBlocker />} />
-        <Route path="/tjanster/teknisk-rengoring" element={<TechnicalCleaning />} />
         <Route path="/om-oss" element={<About />} />
         <Route path="/kontakt" element={<Contact />} />
       </Routes>

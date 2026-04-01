@@ -12,13 +12,13 @@ const fadeInUp = {
 const coreServices = [
   {
     title: "Sanering vid dödsfall",
-    description: "Respektfull och tekniskt avancerad hantering av obevakade dödsfall.",
+    description: "Respektfull och tekniskt avancerad hantering av obevakade dödsfall. Inkluderar teknisk rengöring som en extra tjänst för resten av bostadens ytor.",
     icon: <Ghost className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/sanering-dodstall"
   },
   {
     title: "Traumasanering",
-    description: "Professionell återställning efter olyckor eller våldshändelser.",
+    description: "Professionell återställning efter olyckor eller våldshändelser. Inkluderar teknisk rengöring som en extra tjänst för resten av bostadens ytor.",
     icon: <Activity className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/traumasanering"
   },
@@ -33,12 +33,6 @@ const coreServices = [
     description: "Respektfull hantering och sanering av personliga tillhörigheter.",
     icon: <Box className="w-8 h-8 text-cyan-accent" />,
     link: "/om-oss#minneshantering"
-  },
-  {
-    title: "Teknisk rengöring",
-    description: "Specialiserad rengöring av tekniska miljöer och maskiner.",
-    icon: <Shield className="w-8 h-8 text-cyan-accent" />,
-    link: "/tjanster/teknisk-rengoring"
   },
   {
     title: "Lasersanering (Fotodisruptionsteknik)",

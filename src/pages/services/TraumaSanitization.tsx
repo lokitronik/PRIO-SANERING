@@ -51,6 +51,10 @@ export default function TraumaSanitization() {
               <ShieldCheck className="w-6 h-6 text-cyan-accent flex-shrink-0" />
               <p className="text-midnight/70 font-light">Diskretion genom omärkta fordon och personal i civila kläder.</p>
             </div>
+            <div className="flex gap-4 items-start">
+              <ShieldCheck className="w-6 h-6 text-cyan-accent flex-shrink-0" />
+              <p className="text-midnight/70 font-light"><strong>Teknisk rengöring (Tillval):</strong> Specialiserad rengöring av tekniska miljöer, maskiner och övriga ytor i bostaden för en komplett återställning.</p>
+            </div>
           </div>
         </motion.div>
         <motion.div 
