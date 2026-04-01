@@ -38,7 +38,7 @@ const coreServices = [
     title: "Lasersanering (Fotodisruptionsteknik)",
     description: "Avancerad pulsad laser för selektiv sanering utan kontakt, vatten eller kemikalier. Metoden vaporiserar omedelbart bakterier, mögel och virus i porösa material. Den är oumbärlig för sanering av sot efter brand eller rökansamling i skorstenar, då den eliminerar luktkällan vid roten utan att skada underlaget.",
     icon: <Zap className="w-8 h-8 text-cyan-accent" />,
-    link: "/tjanster/luktsanering"
+    link: "/tjanster/lasersanering"
   },
   {
     title: "Technical Cleaning B2B (Biosäkerhet för Hotell & Airbnb)",

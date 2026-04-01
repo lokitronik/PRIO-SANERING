@@ -57,20 +57,29 @@ export default function TechnicalCleaningB2B() {
         <motion.div {...fadeInUp}>
           <h2 className="text-4xl font-bold mb-8">Varför Technical Cleaning B2B?</h2>
           <p className="text-lg font-light opacity-80 mb-10 leading-relaxed">
-            Vi erbjuder en vetenskapligt verifierad metod för att säkerställa biosäkerhet i kommersiella lokaler. Vår metod med VHP eliminerar 99,99% av alla patogener och vi verifierar resultatet med ATP-mätning.
+            Vi erbjuder en vetenskapligt verifierad metod för att säkerställa biosäkerhet i kommersiella lokaler. Varje timme en hotellsvit eller en industrilokal står oanvänd är en förlust.
           </p>
           <ul className="space-y-6">
             <li className="flex items-start gap-4">
               <ShieldCheck className="w-6 h-6 text-cyan-accent flex-shrink-0" />
-              <p className="font-light opacity-80">Medicinsk sterilisering med VHP-teknik.</p>
+              <div>
+                <h4 className="font-bold text-cyan-accent">Ekonomi & Stillestånd</h4>
+                <p className="font-light opacity-80">Vår metod med VHP och laser kräver ingen torktid och lämnar inga kemiska rester. Lokalen kan återställas till full drift omedelbart efter verifiering.</p>
+              </div>
             </li>
             <li className="flex items-start gap-4">
               <ShieldCheck className="w-6 h-6 text-cyan-accent flex-shrink-0" />
-              <p className="font-light opacity-80">Vetenskaplig verifiering genom ATP-mätning.</p>
+              <div>
+                <h4 className="font-bold text-cyan-accent">Verifierad Biosäkerhet (Vetenskaplig trygghet)</h4>
+                <p className="font-light opacity-80">Vi gissar inte om det är rent. Vi använder ATP-mätning för att ge ett objektivt kvitto på att ytan är kliniskt ren. Detta är ett krav för försäkringsbolag och för att garantera personalens hälsa enligt Arbetsmiljöverkets riktlinjer.</p>
+              </div>
             </li>
             <li className="flex items-start gap-4">
               <ShieldCheck className="w-6 h-6 text-cyan-accent flex-shrink-0" />
-              <p className="font-light opacity-80">Utfärdande av Biosäkerhetsintyg efter varje uppdrag.</p>
+              <div>
+                <h4 className="font-bold text-cyan-accent">Biosäkerhetsintyg</h4>
+                <p className="font-light opacity-80">Vi utfärdar ett Biosäkerhetsintyg efter varje uppdrag som garanterar en biologiskt säker miljö.</p>
+              </div>
             </li>
           </ul>
         </motion.div>
