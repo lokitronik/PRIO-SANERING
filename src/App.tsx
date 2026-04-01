@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom"; // He cambiado BrowserRouter por HashRouter
 import { AnimatePresence } from "motion/react";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
@@ -35,6 +35,8 @@ function AnimatedRoutes() {
         <Route path="/tjanster/teknisk-rengoring" element={<TechnicalCleaning />} />
         <Route path="/om-oss" element={<About />} />
         <Route path="/kontakt" element={<Contact />} />
+        {/* Esta línea de abajo es el "salvavidas" por si falla la ruta principal */}
+        <Route path="*" element={<Home />} /> 
       </Routes>
     </AnimatePresence>
   );
