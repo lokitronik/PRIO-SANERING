@@ -32,6 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # VITE genera la web en la carpeta 'dist'
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
