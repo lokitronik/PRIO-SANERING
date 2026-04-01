@@ -26,7 +26,7 @@ const pillars = [
     title: "Smittskydd & Desinfektion",
     description: "Avancerad eliminering av virus, bakterier och biologiska risker.",
     icon: <Droplets className="w-8 h-8 text-cyan-accent" />,
-    link: "/tjanster/invisible-cleaning"
+    link: "/tjanster/technical-cleaning-b2b"
   }
 ];
 

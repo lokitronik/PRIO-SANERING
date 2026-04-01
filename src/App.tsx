@@ -17,6 +17,8 @@ import LaserSanitization from "./pages/services/LaserSanitization";
 import TechnicalCleaningB2B from "./pages/services/TechnicalCleaningB2B";
 import HardToReachDisinfection from "./pages/services/HardToReachDisinfection";
 import BirdBlocker from "./pages/services/BirdBlocker";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -35,6 +37,8 @@ function AnimatedRoutes() {
         <Route path="/tjanster/bird-blocker" element={<BirdBlocker />} />
         <Route path="/om-oss" element={<About />} />
         <Route path="/kontakt" element={<Contact />} />
+        <Route path="/integritetspolicy" element={<PrivacyPolicy />} />
+        <Route path="/allmanna-villkor" element={<TermsAndConditions />} />
       </Routes>
     </AnimatePresence>
   );

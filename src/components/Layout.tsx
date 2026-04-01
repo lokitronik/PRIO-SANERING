@@ -104,8 +104,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto pt-8 border-t border-midnight/5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-midnight/40">
           <div>© 2026 Prio Sanering AB. Alla rättigheter förbehållna.</div>
           <div className="flex gap-6">
-            <span>Integritetspolicy</span>
-            <span>Allmänna villkor</span>
+            <Link to="/integritetspolicy" className="hover:text-cyan-accent transition-colors">Integritetspolicy</Link>
+            <Link to="/allmanna-villkor" className="hover:text-cyan-accent transition-colors">Allmänna villkor</Link>
           </div>
         </div>
       </footer>
