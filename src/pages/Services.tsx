@@ -89,11 +89,11 @@ export default function Services() {
       {/* Core Services Section */}
       <div className="mb-32">
         <h2 className="text-3xl font-bold mb-12 border-b border-midnight/10 pb-4">Kärntjänster</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {coreServices.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-slate-50 p-12 rounded-3xl border-l-8 border-cyan-accent hover:translate-y-[-8px] transition-transform duration-300 flex flex-col"
+              className="bg-slate-50 p-10 rounded-3xl border-l-8 border-cyan-accent hover:translate-y-[-8px] transition-transform duration-300 flex flex-col"
               {...fadeInUp}
               transition={{ ...fadeInUp.transition, delay: index * 0.1 }}
             >
@@ -113,11 +113,11 @@ export default function Services() {
       {/* Preventative Services Section */}
       <div className="mb-32">
         <h2 className="text-3xl font-bold mb-12 border-b border-midnight/10 pb-4">Förebyggande tjänster & Tillval</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {preventativeServices.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-slate-50 p-12 rounded-3xl border-l-8 border-midnight/30 hover:border-cyan-accent transition-colors hover:translate-y-[-8px] transition-transform duration-300 flex flex-col"
+              className="bg-slate-50 p-10 rounded-3xl border-l-8 border-midnight/30 hover:border-cyan-accent transition-colors hover:translate-y-[-8px] transition-transform duration-300 flex flex-col"
               {...fadeInUp}
               transition={{ ...fadeInUp.transition, delay: index * 0.1 }}
             >
