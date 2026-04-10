@@ -154,6 +154,54 @@ export default function LaserSanitization() {
         </div>
       </div>
 
+      {/* Gravestone Restoration Section */}
+      <div className="mb-24">
+        <motion.div 
+          className="bg-midnight text-white p-12 md:p-20 rounded-[3rem] overflow-hidden relative"
+          {...fadeInUp}
+        >
+          <div className="relative z-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8">
+              LASERSANERING GRAVSTENAR — RESTAURERING & GRAVVÅRD
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-xl font-light opacity-90 leading-relaxed mb-8">
+                  Vår laserteknik är den mest skonsamma metoden för restaurering av gravstenar och historiska monument. 
+                  Vi återställer stenens ursprungliga lyster utan att använda högtryckstvätt, kemikalier eller blästring som kan erodera ytan.
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-cyan-accent" />
+                    <span className="font-light">Eliminerar mossa, lav och alger på molekylär nivå</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-cyan-accent" />
+                    <span className="font-light">Skyddar känsliga inskriptioner och förgyllningar</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-cyan-accent" />
+                    <span className="font-light">Ingen risk för frostsprängning (helt torr metod)</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-cyan-accent" />
+                    <span className="font-light">Bevarar stenens naturliga patina och struktur</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-sm">
+                <h4 className="text-xl font-bold mb-4 text-cyan-accent">Varför välja laser för gravvård?</h4>
+                <p className="font-light opacity-70 leading-relaxed">
+                  Traditionella metoder som kemisk rengöring eller mekanisk borstning kan lämna rester eller orsaka mikrosprickor i stenen där ny påväxt snabbt får fäste. 
+                  Lasern steriliserar ytan och tar bort rötterna till lav och mossa, vilket ger ett resultat som varar betydligt längre.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-accent/10 blur-[100px] rounded-full -mr-32 -mt-32"></div>
+        </motion.div>
+      </div>
+
       {/* CTA */}
       <motion.div 
         className="bg-midnight text-white p-12 md:p-20 rounded-[3rem] text-center"
