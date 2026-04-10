@@ -35,8 +35,8 @@ const coreServices = [
     link: "/om-oss#minneshantering"
   },
   {
-    title: "Lasersanering (Fotodisruptionsteknik)",
-    description: "Avancerad pulsad laser för selektiv sanering utan kontakt, vatten eller kemikalier. Metoden vaporiserar omedelbart bakterier, mögel och virus i porösa material. Den är oumbärlig för sanering av sot efter brand eller rökansamling i skorstenar, då den eliminerar luktkällan vid roten utan att skada underlaget.",
+    title: "Lasersanering",
+    description: "Avancerad pulsad laser för selektiv sanering utan kontakt, vatten eller kemikalier. Metoden vaporiserar omedelbart bakterier, mögel och virus i porösa material. Den är oumbärlig för sanering av sot efter brand, rökansamling i skorstenar samt för skonsam restaurering av gravstenar och historiska monument.",
     icon: <Zap className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/lasersanering"
   },
