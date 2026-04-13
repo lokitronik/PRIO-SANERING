@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { Shield, Phone, Activity, Ghost, Droplets, ArrowRight } from "lucide-react";
+import { Shield, Phone, Activity, Ghost, Droplets, ArrowRight, Wind, Zap, ShieldCheck, Box } from "lucide-react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -11,22 +11,40 @@ const fadeInUp = {
 
 const pillars = [
   {
+    title: "Sanering vid dödsfall",
+    description: "Respektfull och tekniskt avancerad hantering av obevakade dödsfall.",
+    icon: <Ghost className="w-8 h-8 text-cyan-accent" />,
+    link: "/tjanster/sanering-dodstall"
+  },
+  {
     title: "Traumasanering",
     description: "Professionell återställning efter olyckor eller våldshändelser.",
     icon: <Activity className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/traumasanering"
   },
   {
-    title: "Sanering vid dödsfall",
-    description: "Respektfull hantering av obevakade dödsfall med teknisk precision.",
-    icon: <Ghost className="w-8 h-8 text-cyan-accent" />,
-    link: "/tjanster/sanering-dodstall"
+    title: "Luktsanering",
+    description: "Teknisk neutralisering av svåra lukter på molekylär nivå.",
+    icon: <Wind className="w-8 h-8 text-cyan-accent" />,
+    link: "/tjanster/luktsanering"
   },
   {
-    title: "Smittskydd & Desinfektion",
-    description: "Avancerad eliminering av virus, bakterier och biologiska risker.",
-    icon: <Droplets className="w-8 h-8 text-cyan-accent" />,
+    title: "Lasersanering",
+    description: "Avancerad restaurering av fasader, gravstenar och sot efter brand.",
+    icon: <Zap className="w-8 h-8 text-cyan-accent" />,
+    link: "/tjanster/lasersanering"
+  },
+  {
+    title: "Technical Cleaning B2B",
+    description: "Biosäkerhet och medicinsk sterilisering för hotell och Airbnb.",
+    icon: <ShieldCheck className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/technical-cleaning-b2b"
+  },
+  {
+    title: "Minneshantering",
+    description: "Respektfull hantering och sanering av personliga tillhörigheter.",
+    icon: <Box className="w-8 h-8 text-cyan-accent" />,
+    link: "/om-oss#minneshantering"
   }
 ];
 
