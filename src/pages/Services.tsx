@@ -141,22 +141,22 @@ export default function Services() {
           {...fadeInUp}
         >
           <Users className="w-16 h-16 text-cyan-accent mx-auto mb-8" />
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">Varför Prio Sanering? (Trippelstyrka)</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">Varför välja Prio Sanering?</h2>
           <p className="text-xl font-light leading-relaxed opacity-90 mb-12">
-            Vi är tre certifierade partner som alltid arbetar tillsammans på fältet. Vår Trippelstyrka gör att vi slutför komplexa uppdrag på halva tiden jämfört med branschstandarden, vilket minimerar kundens driftstopp.
+            Vi arbetar effektivt och strukturerat i varje uppdrag. Vi planerar arbetet så att ni kan fortsätta er vardag som vanligt.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
-              <h4 className="font-bold mb-2 text-cyan-accent">Certifierade</h4>
-              <p className="text-sm opacity-60">Tre experter med fullständiga certifieringar.</p>
+              <h4 className="font-bold mb-2 text-cyan-accent">Effektivitet</h4>
+              <p className="text-sm opacity-60">Strukturerat arbete som minimerar driftstopp.</p>
             </div>
             <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
-              <h4 className="font-bold mb-2 text-cyan-accent">Samarbetande</h4>
-              <p className="text-sm opacity-60">Vi arbetar alltid tillsammans för maximal effektivitet.</p>
+              <h4 className="font-bold mb-2 text-cyan-accent">Kvalitet</h4>
+              <p className="text-sm opacity-60">Högsta standard genom anpassade resurser.</p>
             </div>
             <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
-              <h4 className="font-bold mb-2 text-cyan-accent">Snabbhet</h4>
-              <p className="text-sm opacity-60">Halverad tid vid komplexa saneringsuppdrag.</p>
+              <h4 className="font-bold mb-2 text-cyan-accent">Precision</h4>
+              <p className="text-sm opacity-60">Tekniskt avancerade metoder för varje unikt behov.</p>
             </div>
           </div>
         </motion.div>
