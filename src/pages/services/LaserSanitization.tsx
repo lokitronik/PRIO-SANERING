@@ -31,10 +31,128 @@ export default function LaserSanitization() {
           Lasersanering: Framtidens teknik för sanering och restaurering
         </h1>
         <p className="text-xl text-midnight/60 max-w-3xl mx-auto font-light leading-relaxed">
-          Vi använder högintensiva laserpulser som skapar en fotodestruktion av smuts, sot och biologiska agenser. 
-          En metod som revolutionerar hur vi återställer ytor utan att skada underlaget.
+          Vi erbjuder specialiserad lasersanering med fokus på två huvudområden: 
+          <span className="font-bold text-midnight"> Fasadrestaurering</span> och 
+          <span className="font-bold text-midnight"> Gravvård</span>. 
+          En icke-invasiv metod som återställer ytor till nyskick utan att skada underlaget.
         </p>
       </motion.div>
+
+      {/* Primary Service 1: Facade Restoration */}
+      <div className="mb-24">
+        <motion.div 
+          className="bg-slate-50 p-12 md:p-20 rounded-[3rem] overflow-hidden relative border border-midnight/5 shadow-sm"
+          {...fadeInUp}
+        >
+          <div className="relative z-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-midnight">
+              FASADSANERING & LASERRESTAURERING
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+              <div className="space-y-8">
+                <div className="flex gap-6">
+                  <Target className="w-8 h-8 text-cyan-accent flex-shrink-0" />
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">Precisionsteknik</h4>
+                    <p className="text-midnight/60 font-light">Eliminerar ingrodd smuts utan att skada underlaget (sten, tegel eller betong).</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <Leaf className="w-8 h-8 text-cyan-accent flex-shrink-0" />
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">100% Miljövänlig</h4>
+                    <p className="text-midnight/60 font-light">En helt torr process utan kemikalier eller slipmedel. Inget farligt avfall genereras.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <Zap className="w-8 h-8 text-cyan-accent flex-shrink-0" />
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">Vinteroptimering</h4>
+                    <p className="text-midnight/60 font-light">Perfekt för att sanera skador orsakade av vägsalt, fukt och urbana föroreningar.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <Shield className="w-8 h-8 text-cyan-accent flex-shrink-0" />
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">Minimal Störning</h4>
+                    <p className="text-midnight/60 font-light">En ren och tyst metod som inte påverkar de boendes vardag eller närmiljön.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-midnight/5">
+                <h4 className="text-2xl font-bold mb-6 text-midnight">Specialtjänster</h4>
+                <div className="space-y-6">
+                  <div>
+                    <h5 className="font-bold text-cyan-accent mb-1">Socklar och Entréer</h5>
+                    <p className="text-sm text-midnight/60 font-light">Djuprengöring av områden som utsätts för hårt slitage och trafik.</p>
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-cyan-accent mb-1">Sanering och Hygien</h5>
+                    <p className="text-sm text-midnight/60 font-light">Effektiv eliminering av spår efter urin, fuktfläckar, mögel och mossa.</p>
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-cyan-accent mb-1">Fasader och Pelare</h5>
+                    <p className="text-sm text-midnight/60 font-light">Borttagning av svarta beläggningar ("skorpor") och atmosfäriska föroreningar.</p>
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-cyan-accent mb-1">Restaurering</h5>
+                    <p className="text-sm text-midnight/60 font-light">Varsam borttagning av färgspår, graffiti och tidens påverkan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Primary Service 2: Gravestone Restoration */}
+      <div className="mb-24">
+        <motion.div 
+          className="bg-slate-50 p-12 md:p-20 rounded-[3rem] overflow-hidden relative border border-midnight/5 shadow-sm"
+          {...fadeInUp}
+        >
+          <div className="relative z-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-midnight">
+              LASERSANERING GRAVSTENAR — RESTAURERING & GRAVVÅRD
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+              <div className="space-y-8">
+                <p className="text-xl font-light text-midnight/80 leading-relaxed">
+                  Vår laserteknik är den mest skonsamma metoden för restaurering av gravstenar och historiska monument. 
+                  Vi återställer stenens ursprungliga lyster utan att använda högtryckstvätt, kemikalier eller blästring.
+                </p>
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <CheckCircle2 className="w-6 h-6 text-cyan-accent flex-shrink-0" />
+                    <p className="text-midnight/70 font-light">Eliminerar mossa, lav och alger på molekylär nivå</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <CheckCircle2 className="w-6 h-6 text-cyan-accent flex-shrink-0" />
+                    <p className="text-midnight/70 font-light">Skyddar känsliga inskriptioner och förgyllningar</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <CheckCircle2 className="w-6 h-6 text-cyan-accent flex-shrink-0" />
+                    <p className="text-midnight/70 font-light">Ingen risk för frostsprängning (helt torr metod)</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <CheckCircle2 className="w-6 h-6 text-cyan-accent flex-shrink-0" />
+                    <p className="text-midnight/70 font-light">Bevarar stenens naturliga patina och struktur</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-midnight/5">
+                <h4 className="text-2xl font-bold mb-6 text-midnight">Varför välja laser för gravvård?</h4>
+                <p className="font-light text-midnight/60 leading-relaxed">
+                  Traditionella metoder som kemisk rengöring eller mekanisk borstning kan lämna rester eller orsaka mikrosprickor i stenen där ny påväxt snabbt får fäste. 
+                  Lasern steriliserar ytan och tar bort rötterna till lav och mossa, vilket ger ett resultat som varar betydligt längre.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
 
       {/* Main Benefits - Three Pillars */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
@@ -152,54 +270,6 @@ export default function LaserSanitization() {
             </div>
           </motion.div>
         </div>
-      </div>
-
-      {/* Gravestone Restoration Section */}
-      <div className="mb-24">
-        <motion.div 
-          className="bg-midnight text-white p-12 md:p-20 rounded-[3rem] overflow-hidden relative"
-          {...fadeInUp}
-        >
-          <div className="relative z-10">
-            <h2 className="text-3xl md:text-5xl font-bold mb-8">
-              LASERSANERING GRAVSTENAR — RESTAURERING & GRAVVÅRD
-            </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <p className="text-xl font-light opacity-90 leading-relaxed mb-8">
-                  Vår laserteknik är den mest skonsamma metoden för restaurering av gravstenar och historiska monument. 
-                  Vi återställer stenens ursprungliga lyster utan att använda högtryckstvätt, kemikalier eller blästring som kan erodera ytan.
-                </p>
-                <ul className="space-y-4">
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-cyan-accent" />
-                    <span className="font-light">Eliminerar mossa, lav och alger på molekylär nivå</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-cyan-accent" />
-                    <span className="font-light">Skyddar känsliga inskriptioner och förgyllningar</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-cyan-accent" />
-                    <span className="font-light">Ingen risk för frostsprängning (helt torr metod)</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-cyan-accent" />
-                    <span className="font-light">Bevarar stenens naturliga patina och struktur</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-sm">
-                <h4 className="text-xl font-bold mb-4 text-cyan-accent">Varför välja laser för gravvård?</h4>
-                <p className="font-light opacity-70 leading-relaxed">
-                  Traditionella metoder som kemisk rengöring eller mekanisk borstning kan lämna rester eller orsaka mikrosprickor i stenen där ny påväxt snabbt får fäste. 
-                  Lasern steriliserar ytan och tar bort rötterna till lav och mossa, vilket ger ett resultat som varar betydligt längre.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-accent/10 blur-[100px] rounded-full -mr-32 -mt-32"></div>
-        </motion.div>
       </div>
 
       {/* CTA */}
