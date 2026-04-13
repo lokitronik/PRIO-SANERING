@@ -79,10 +79,10 @@ export default function Home() {
           {...fadeInUp}
         >
           <h1 className="text-5xl md:text-7xl font-extrabold text-midnight leading-[1.1] mb-6">
-            Expertis och diskretion vid extrema situationer.
+            Prio Sanering AB – Din expert på teknisk sanering & biosäkerhet.
           </h1>
           <p className="text-xl md:text-2xl text-midnight/80 font-light mb-10 leading-relaxed">
-            Specialistsanering av trauma, dödsfall och biologiska risker med jour dygnet runt.
+            Vi erbjuder specialiserade lösningar inom traumasanering, lasersanering och mikrobiologisk dekontaminering med absolut diskretion.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
