@@ -84,7 +84,7 @@ export default function LaserSanitization() {
                 <h4 className="text-2xl font-bold mb-6 text-midnight">Specialtjänster</h4>
                 <div className="space-y-6">
                   <div>
-                    <h5 className="font-bold text-cyan-accent mb-1">Fasad- & Ytrestaurering</h5>
+                    <h5 className="font-bold text-cyan-accent mb-1">Restaurering av stensockel och entrétrappa</h5>
                     <p className="text-sm text-midnight/60 font-light">Djuprengöring av socklar, pelare och fasader. Vi tar bort svarta beläggningar ("skorpor"), atmosfäriska föroreningar, graffiti och färgspår.</p>
                   </div>
                   <div>
