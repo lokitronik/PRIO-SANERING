@@ -86,11 +86,9 @@ export default function LaserSanitization() {
                 <div className="space-y-6">
                   <div>
                     <h5 className="font-bold text-cyan-accent mb-1">Fasad- & Ytrestaurering</h5>
-                    <p className="text-sm text-midnight/60 font-light">Djuprengöring av socklar, pelare och fasader. Vi tar bort svarta beläggningar ("skorpor"), atmosfäriska föroreningar, graffiti och färgspår.</p>
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-cyan-accent mb-1">Sanering & Hygien</h5>
-                    <p className="text-sm text-midnight/60 font-light">Effektiv eliminering av biologiska föroreningar som mögel, mossa, urin och fuktfläckar på alla typer av ytor.</p>
+                    <p className="text-sm text-midnight/60 font-light">
+                      Djuprengöring av socklar, pelare och fasader. Vi eliminerar svarta beläggningar ("skorpor"), atmosfäriska föroreningar, graffiti och färgspår, samt biologiska föroreningar som mögel, mossa och urin.
+                    </p>
                   </div>
                 </div>
               </div>
