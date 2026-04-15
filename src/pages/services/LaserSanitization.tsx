@@ -84,20 +84,16 @@ export default function LaserSanitization() {
                 <h4 className="text-2xl font-bold mb-6 text-midnight">Specialtjänster</h4>
                 <div className="space-y-6">
                   <div>
-                    <h5 className="font-bold text-cyan-accent mb-1">Socklar och Entréer</h5>
-                    <p className="text-sm text-midnight/60 font-light">Djuprengöring av områden som utsätts för hårt slitage och trafik.</p>
+                    <h5 className="font-bold text-cyan-accent mb-1">Fasad- & Ytrestaurering</h5>
+                    <p className="text-sm text-midnight/60 font-light">Djuprengöring av socklar, pelare och fasader. Vi tar bort svarta beläggningar ("skorpor"), atmosfäriska föroreningar, graffiti och färgspår.</p>
                   </div>
                   <div>
-                    <h5 className="font-bold text-cyan-accent mb-1">Sanering och Hygien</h5>
-                    <p className="text-sm text-midnight/60 font-light">Effektiv eliminering av spår efter urin, fuktfläckar, mögel och mossa.</p>
+                    <h5 className="font-bold text-cyan-accent mb-1">Sanering & Hygien</h5>
+                    <p className="text-sm text-midnight/60 font-light">Effektiv eliminering av biologiska föroreningar som mögel, mossa, urin och fuktfläckar på alla typer av ytor.</p>
                   </div>
                   <div>
-                    <h5 className="font-bold text-cyan-accent mb-1">Fasader och Pelare</h5>
-                    <p className="text-sm text-midnight/60 font-light">Borttagning av svarta beläggningar ("skorpor") och atmosfäriska föroreningar.</p>
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-cyan-accent mb-1">Restaurering</h5>
-                    <p className="text-sm text-midnight/60 font-light">Varsam borttagning av färgspår, graffiti och tidens påverkan.</p>
+                    <h5 className="font-bold text-cyan-accent mb-1">Skorstenar</h5>
+                    <p className="text-sm text-midnight/60 font-light">Sanering av sot och rökansamlingar för att återställa brandsäkerheten och funktionen i rökkanaler.</p>
                   </div>
                 </div>
               </div>
