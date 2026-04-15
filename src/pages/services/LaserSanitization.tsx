@@ -31,9 +31,10 @@ export default function LaserSanitization() {
           Lasersanering: Framtidens teknik för sanering och restaurering
         </h1>
         <p className="text-xl text-midnight/60 max-w-3xl mx-auto font-light leading-relaxed">
-          Vi erbjuder specialiserad lasersanering med fokus på två huvudområden: 
-          <span className="font-bold text-midnight"> Fasadrestaurering</span> och 
-          <span className="font-bold text-midnight"> Gravvård</span>. 
+          Vi erbjuder specialiserad lasersanering med fokus på tre huvudområden: 
+          <span className="font-bold text-midnight"> Fasadrestaurering</span>, 
+          <span className="font-bold text-midnight"> Gravvård</span> och 
+          <span className="font-bold text-midnight"> Skorstenssanering</span>. 
           En icke-invasiv metod som återställer ytor till nyskick utan att skada underlaget.
         </p>
       </motion.div>
@@ -84,16 +85,12 @@ export default function LaserSanitization() {
                 <h4 className="text-2xl font-bold mb-6 text-midnight">Specialtjänster</h4>
                 <div className="space-y-6">
                   <div>
-                    <h5 className="font-bold text-cyan-accent mb-1">Restaurering av stensockel och entrétrappa</h5>
+                    <h5 className="font-bold text-cyan-accent mb-1">Fasad- & Ytrestaurering</h5>
                     <p className="text-sm text-midnight/60 font-light">Djuprengöring av socklar, pelare och fasader. Vi tar bort svarta beläggningar ("skorpor"), atmosfäriska föroreningar, graffiti och färgspår.</p>
                   </div>
                   <div>
                     <h5 className="font-bold text-cyan-accent mb-1">Sanering & Hygien</h5>
                     <p className="text-sm text-midnight/60 font-light">Effektiv eliminering av biologiska föroreningar som mögel, mossa, urin och fuktfläckar på alla typer av ytor.</p>
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-cyan-accent mb-1">Skorstenar</h5>
-                    <p className="text-sm text-midnight/60 font-light">Sanering av sot och rökansamlingar för att återställa brandsäkerheten och funktionen i rökkanaler.</p>
                   </div>
                 </div>
               </div>
@@ -143,6 +140,54 @@ export default function LaserSanitization() {
                 <p className="font-light text-midnight/60 leading-relaxed">
                   Traditionella metoder som kemisk rengöring eller mekanisk borstning kan lämna rester eller orsaka mikrosprickor i stenen där ny påväxt snabbt får fäste. 
                   Lasern steriliserar ytan och tar bort rötterna till lav och mossa, vilket ger ett resultat som varar betydligt längre.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Primary Service 3: Chimney Restoration */}
+      <div className="mb-24">
+        <motion.div 
+          className="bg-slate-50 p-12 md:p-20 rounded-[3rem] overflow-hidden relative border border-midnight/5 shadow-sm"
+          {...fadeInUp}
+        >
+          <div className="relative z-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-midnight uppercase">
+              Skorstenssanering & Sotsanering
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+              <div className="space-y-8">
+                <p className="text-xl font-light text-midnight/80 leading-relaxed">
+                  Lasersanering är den mest effektiva metoden för att ta bort glanssot och rökansamlingar i skorstenar och rökkanaler. 
+                  Vi återställer brandsäkerheten utan att skada murstocken eller skapa damm i fastigheten.
+                </p>
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <CheckCircle2 className="w-6 h-6 text-cyan-accent flex-shrink-0" />
+                    <p className="text-midnight/70 font-light">Vaporiserar glanssot omedelbart (sublimering)</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <CheckCircle2 className="w-6 h-6 text-cyan-accent flex-shrink-0" />
+                    <p className="text-midnight/70 font-light">Eliminerar brandfarliga beläggningar helt</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <CheckCircle2 className="w-6 h-6 text-cyan-accent flex-shrink-0" />
+                    <p className="text-midnight/70 font-light">Ingen mekanisk nötning på murstocken</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <CheckCircle2 className="w-6 h-6 text-cyan-accent flex-shrink-0" />
+                    <p className="text-midnight/70 font-light">Tar bort röklukt vid källan</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-midnight/5">
+                <h4 className="text-2xl font-bold mb-6 text-midnight">Säkerhet och effektivitet</h4>
+                <p className="font-light text-midnight/60 leading-relaxed">
+                  Traditionell sotning tar inte alltid bort de mest brandfarliga beläggningarna (glanssot). 
+                  Vår laserteknik når in i materialets porer och tar bort allt brännbart material, vilket minimerar risken för skorstensbrand och förbättrar draget avsevärt.
                 </p>
               </div>
             </div>
