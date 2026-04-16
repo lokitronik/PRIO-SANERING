@@ -25,7 +25,7 @@ const coreServices = [
     title: "Sanering vid obevakat dödsfall",
     description:
       "Diskret och professionell sanering efter obevakade dödsfall. Vi hanterar biologiskt material, lukt, dokumentation och återställande åtgärder med respekt och säkerhet.",
-icon: <HeartHandCheck className="w-8 h-8 text-cyan-accent" />,
+icon: <HeartHandshake className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/sanering-dodstall"
   },
   {
