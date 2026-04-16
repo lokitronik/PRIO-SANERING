@@ -72,10 +72,10 @@ export default function Home() {
       className="overflow-hidden"
     >
       <Helmet>
-        <title>Prio Sanering AB | Specialiserad sanering</title>
+        <title>Prio Sanering AB | Traumasanering, sanering vid dödsfall och luktsanering</title>
         <meta
           name="description"
-          content="Prio Sanering AB erbjuder specialiserade tjänster inom biologisk sanering, traumasanering, luktsanering, lasersanering och teknisk rengöring."
+          content="Prio Sanering AB erbjuder specialiserade tjänster inom traumasanering, sanering vid dödsfall, luktsanering, lasersanering och teknisk rengöring."
         />
         <meta
           name="keywords"
@@ -98,12 +98,11 @@ export default function Home() {
 
         <motion.div className="relative z-10 max-w-3xl" {...fadeInUp}>
           <h1 className="text-5xl md:text-7xl font-extrabold text-midnight leading-[1.1] mb-6">
-            Specialiserad sanering med fokus på säkerhet, diskretion och teknisk noggrannhet
+            Prio Sanering AB – Traumasanering, sanering vid dödsfall och luktsanering
           </h1>
           <p className="text-xl md:text-2xl text-midnight/80 font-light mb-10 leading-relaxed">
-            Vi erbjuder tjänster inom biologisk sanering, traumasanering,
-            luktsanering, lasersanering och teknisk rengöring för känsliga och
-            krävande miljöer.
+            Vi arbetar med säker, diskret och tekniskt noggrann sanering i känsliga
+            och krävande miljöer – för privatpersoner, fastighetsägare och verksamheter.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
