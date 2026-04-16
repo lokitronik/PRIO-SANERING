@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import {
   Activity,
-  Shield,
+  HeartHandshake,
   Wind,
   ArrowRight,
   Maximize,
