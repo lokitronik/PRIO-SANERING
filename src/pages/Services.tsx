@@ -1,7 +1,18 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { Activity, Ghost, Wind, Droplets, ArrowRight, Maximize, Bird, Box, Shield, Zap, ShieldCheck, Users } from "lucide-react";
+import {
+  Activity,
+  Shield,
+  Wind,
+  ArrowRight,
+  Maximize,
+  Bird,
+  Box,
+  Zap,
+  ShieldCheck,
+  Users
+} from "lucide-react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -11,38 +22,44 @@ const fadeInUp = {
 
 const coreServices = [
   {
-    title: "Sanering vid dödsfall",
-    description: "Respektfull och tekniskt avancerad hantering av obevakade dödsfall. Inkluderar teknisk rengöring som en extra tjänst för resten av bostadens ytor.",
-    icon: <Ghost className="w-8 h-8 text-cyan-accent" />,
+    title: "Sanering vid obevakat dödsfall",
+    description:
+      "Diskret och professionell sanering efter obevakade dödsfall. Vi hanterar biologiskt material, lukt, dokumentation och återställande åtgärder med respekt och säkerhet.",
+icon: <HeartHandCheck className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/sanering-dodstall"
   },
   {
     title: "Traumasanering",
-    description: "Professionell återställning efter olyckor eller våldshändelser. Inkluderar teknisk rengöring som en extra tjänst för resten av bostadens ytor.",
+    description:
+      "Snabb och säker sanering efter blodspill, olyckor, våldshändelser och andra akuta biologiska föroreningar. Vid behov kan teknisk rengöring läggas till för övriga ytor.",
     icon: <Activity className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/traumasanering"
   },
   {
     title: "Luktsanering",
-    description: "Teknisk neutralisering av svåra lukter på molekylär nivå.",
+    description:
+      "Teknisk behandling av svåra och kvarvarande lukter i bostäder, lokaler och andra miljöer där vanlig rengöring inte räcker.",
     icon: <Wind className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/luktsanering"
   },
   {
-    title: "Minneshantering",
-    description: "Respektfull hantering och sanering av personliga tillhörigheter.",
+    title: "Hantering av personliga tillhörigheter",
+    description:
+      "Respektfull identifiering, sortering och hantering av personliga tillhörigheter efter överenskommelse.",
     icon: <Box className="w-8 h-8 text-cyan-accent" />,
     link: "/om-oss#minneshantering"
   },
   {
     title: "Lasersanering",
-    description: "Avancerad pulsad laser för selektiv sanering utan kontakt, vatten eller kemikalier. Metoden vaporiserar omedelbart bakterier, mögel och virus i porösa material. Den är oumbärlig för sanering av sot efter brand, rökansamling i skorstenar samt för skonsam restaurering av gravstenar, fasader och historiska monument.",
+    description:
+      "Skonsam och precis lasersanering för gravstenar, sotpåverkade ytor och utvalda tekniska miljöer där traditionell rengöring riskerar att vara för grov.",
     icon: <Zap className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/lasersanering"
   },
   {
-    title: "Technical Cleaning B2B (Biosäkerhet för Hotell & Airbnb)",
-    description: "Medicinsk sterilisering med VHP (Vaporized Hydrogen Peroxide), inspektion med violett ljus och vetenskaplig verifiering genom ATP-mätning. Vi utfärdar ett Biosäkerhetsintyg efter varje uppdrag som garanterar en biologiskt säker miljö för gäster och personal samt förlänger inventariernas livslängd.",
+   title: "Teknisk rengöring & hygienkontroll",
+    description:
+      "Diskret och noggrant utförd teknisk rengöring för hotell, konferensmiljöer och andra verksamheter med höga krav på hygien, dokumentation och återställning.",
     icon: <ShieldCheck className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/technical-cleaning-b2b"
   }
@@ -51,13 +68,15 @@ const coreServices = [
 const preventativeServices = [
   {
     title: "Svåråtkomliga ytor",
-    description: "Specialiserad desinfektion av dolda och svåråtkomliga utrymmen.",
+    description:
+      "Specialiserad rengöring och desinfektion av dolda eller svåråtkomliga utrymmen där standardinsatser inte räcker.",
     icon: <Maximize className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/svaratkomliga-ytor"
   },
   {
     title: "Bird Blocker",
-    description: "Förebyggande installationer för att skydda fastigheter mot fåglar.",
+    description:
+      "Förebyggande installationer som skyddar fastigheter och solpaneler mot fåglar och följdproblem i utsatta miljöer.",
     icon: <Bird className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/bird-blocker"
   }
@@ -65,30 +84,39 @@ const preventativeServices = [
 
 export default function Services() {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className="py-24 px-6 md:px-12 max-w-7xl mx-auto"
     >
       <Helmet>
-        <title>Våra Tjänster | Prio Sanering AB - Specialistsanering</title>
-        <meta name="description" content="Utforska våra specialiserade saneringstjänster: Traumasanering, sanering vid dödsfall, luktsanering och premium desinfektion för företag." />
-        <meta name="keywords" content="saneringstjänster, traumasanering, luktsanering, dödsfallssanering, desinfektion, sanering företag" />
+        <title>Våra tjänster | Prio Sanering AB</title>
+        <meta
+          name="description"
+          content="Utforska våra specialiserade tjänster inom biologisk sanering, traumasanering, luktsanering, lasersanering, technical cleaning och förebyggande fastighetsskydd."
+        />
+        <meta
+          name="keywords"
+          content="saneringstjänster, traumasanering, luktsanering, dödsfallssanering, lasersanering, technical cleaning, bird blocker"
+        />
       </Helmet>
-      <motion.div 
-        className="text-center mb-20"
-        {...fadeInUp}
-      >
-        <h1 className="text-5xl md:text-6xl font-extrabold text-midnight mb-6">Våra Tjänster</h1>
-        <p className="text-xl text-midnight/60 max-w-3xl mx-auto font-light">
-          Vi erbjuder specialiserade saneringstjänster med fokus på teknisk precision, säkerhet och absolut diskretion.
+
+      <motion.div className="text-center mb-20" {...fadeInUp}>
+        <h1 className="text-5xl md:text-6xl font-extrabold text-midnight mb-6">
+          Våra tjänster
+        </h1>
+        <p className="text-xl text-midnight/60 max-w-3xl mx-auto font-light leading-relaxed">
+          Vi erbjuder specialiserade saneringstjänster med fokus på säkerhet,
+          teknisk noggrannhet, dokumentation och diskret hantering.
         </p>
       </motion.div>
 
       {/* Core Services Section */}
       <div className="mb-32">
-        <h2 className="text-3xl font-bold mb-12 border-b border-midnight/10 pb-4">Kärntjänster</h2>
+        <h2 className="text-3xl font-bold mb-12 border-b border-midnight/10 pb-4">
+          Kärntjänster
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {coreServices.map((service, index) => (
             <motion.div
@@ -102,7 +130,10 @@ export default function Services() {
               <p className="text-lg text-midnight/70 font-light leading-relaxed mb-10 flex-grow">
                 {service.description}
               </p>
-              <Link to={service.link} className="text-cyan-accent font-bold text-lg flex items-center gap-2 hover:gap-3 transition-all">
+              <Link
+                to={service.link}
+                className="text-cyan-accent font-bold text-lg flex items-center gap-2 hover:gap-3 transition-all"
+              >
                 Läs mer om tjänsten <ArrowRight className="w-5 h-5" />
               </Link>
             </motion.div>
@@ -112,21 +143,28 @@ export default function Services() {
 
       {/* Preventative Services Section */}
       <div className="mb-32">
-        <h2 className="text-3xl font-bold mb-12 border-b border-midnight/10 pb-4">Förebyggande tjänster & Tillval</h2>
+        <h2 className="text-3xl font-bold mb-12 border-b border-midnight/10 pb-4">
+          Förebyggande tjänster & tillval
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {preventativeServices.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-slate-50 p-10 rounded-3xl border-l-8 border-midnight/30 hover:border-cyan-accent transition-colors hover:translate-y-[-8px] transition-transform duration-300 flex flex-col"
+              className="bg-slate-50 p-10 rounded-3xl border-l-8 border-midnight/30 hover:border-cyan-accent transition-colors hover:translate-y-[-8px] duration-300 flex flex-col"
               {...fadeInUp}
               transition={{ ...fadeInUp.transition, delay: index * 0.1 }}
             >
-              <div className="mb-8 opacity-60">{service.icon}</div>
-              <h2 className="text-3xl font-bold mb-6 text-midnight/80">{service.title}</h2>
+              <div className="mb-8 opacity-70">{service.icon}</div>
+              <h2 className="text-3xl font-bold mb-6 text-midnight/90">
+                {service.title}
+              </h2>
               <p className="text-lg text-midnight/60 font-light leading-relaxed mb-10 flex-grow">
                 {service.description}
               </p>
-              <Link to={service.link} className="text-midnight/40 hover:text-cyan-accent font-bold text-lg flex items-center gap-2 hover:gap-3 transition-all">
+              <Link
+                to={service.link}
+                className="text-midnight/50 hover:text-cyan-accent font-bold text-lg flex items-center gap-2 hover:gap-3 transition-all"
+              >
                 Läs mer om tjänsten <ArrowRight className="w-5 h-5" />
               </Link>
             </motion.div>
@@ -136,27 +174,34 @@ export default function Services() {
 
       {/* Why Prio Sanering Section */}
       <section className="bg-midnight text-white p-12 md:p-20 rounded-[3rem]">
-        <motion.div 
-          className="max-w-4xl mx-auto text-center"
-          {...fadeInUp}
-        >
+        <motion.div className="max-w-4xl mx-auto text-center" {...fadeInUp}>
           <Users className="w-16 h-16 text-cyan-accent mx-auto mb-8" />
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">Varför välja Prio Sanering?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            Varför välja Prio Sanering?
+          </h2>
           <p className="text-xl font-light leading-relaxed opacity-90 mb-12">
-            Vi arbetar effektivt och strukturerat i varje uppdrag. Vi planerar arbetet så att ni kan fortsätta er vardag som vanligt.
+            Vi arbetar strukturerat och med tydliga rutiner i varje uppdrag.
+            Målet är att genomföra saneringen med så liten påverkan som möjligt
+            för boende, verksamhet och omgivning.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
-              <h4 className="font-bold mb-2 text-cyan-accent">Effektivitet</h4>
-              <p className="text-sm opacity-60">Strukturerat arbete som minimerar driftstopp.</p>
+              <h4 className="font-bold mb-2 text-cyan-accent">Struktur</h4>
+              <p className="text-sm opacity-70">
+                Tydliga arbetsmoment, dokumentation och planering i varje uppdrag.
+              </p>
             </div>
             <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
-              <h4 className="font-bold mb-2 text-cyan-accent">Kvalitet</h4>
-              <p className="text-sm opacity-60">Högsta standard genom anpassade resurser.</p>
+              <h4 className="font-bold mb-2 text-cyan-accent">Diskretion</h4>
+              <p className="text-sm opacity-70">
+                Respektfull och lågmäld hantering i känsliga eller utsatta situationer.
+              </p>
             </div>
             <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
-              <h4 className="font-bold mb-2 text-cyan-accent">Precision</h4>
-              <p className="text-sm opacity-60">Tekniskt avancerade metoder för varje unikt behov.</p>
+              <h4 className="font-bold mb-2 text-cyan-accent">Noggrannhet</h4>
+              <p className="text-sm opacity-70">
+                Metodval och utförande anpassas efter miljö, material och behov.
+              </p>
             </div>
           </div>
         </motion.div>
