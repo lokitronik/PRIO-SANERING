@@ -73,7 +73,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Logo className="scale-75 md:scale-90 origin-left" />
             </Link>
             <p className="text-midnight/60 font-light leading-relaxed max-w-md">
-              Prio Sanering AB är Sveriges ledande specialist på sanering av extrema miljöer. Vi kombinerar teknisk expertis med djup empati och absolut diskretion.
+              Prio Sanering AB är specialiserat på sanering i känsliga och krävande miljöer. Vi arbetar med teknisk noggrannhet, diskret hantering och respekt för varje situation.
             </p>
           </div>
           <div>
