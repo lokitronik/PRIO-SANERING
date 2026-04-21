@@ -63,6 +63,24 @@ const pillars = [
   }
 ];
 
+const values = [
+  {
+    title: "Diskret hantering",
+    description:
+      "Vi arbetar med respekt för situationen och anpassar varje insats efter miljön och människorna omkring."
+  },
+  {
+    title: "Säker arbetsmetod",
+    description:
+      "Varje uppdrag utförs strukturerat med fokus på hygien, riskbedömning och kontrollerad hantering."
+  },
+  {
+    title: "Noggrann återställning",
+    description:
+      "Målet är inte bara att rengöra, utan att återställa miljön på ett tryggt och professionellt sätt."
+  }
+];
+
 export default function Home() {
   return (
     <motion.div
@@ -90,109 +108,55 @@ export default function Home() {
           <img
             src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=2000"
             alt="Trygg och väl återställd miljö"
-            className="w-full h-full object-cover object-center opacity-20"
+            className="w-full h-full object-cover object-center opacity-15"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-white/75" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.10),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(15,23,42,0.10),transparent_35%)]" />
+          <div className="absolute inset-0 bg-white/80" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.08),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(15,23,42,0.08),transparent_30%)]" />
         </div>
 
         <div className="relative z-10 w-full px-4 sm:px-6 md:px-10 lg:px-14">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center py-24 sm:py-28 md:py-32">
-              <motion.div
-                {...fadeInUp}
-                className="lg:col-span-7 max-w-3xl"
-              >
-                <span className="inline-flex items-center rounded-full border border-cyan-accent/20 bg-cyan-accent/10 text-cyan-accent px-4 py-2 text-xs sm:text-sm font-semibold tracking-wide mb-6 sm:mb-8">
-                  Diskret · Säker · Professionell sanering
-                </span>
+          <div className="max-w-7xl mx-auto py-24 sm:py-28 md:py-32">
+            <motion.div {...fadeInUp} className="max-w-3xl">
+              <span className="inline-flex items-center rounded-full border border-cyan-accent/20 bg-cyan-accent/10 text-cyan-accent px-4 py-2 text-xs sm:text-sm font-semibold tracking-wide mb-6 sm:mb-8">
+                Diskret · Säker · Professionell sanering
+              </span>
 
-                <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold text-midnight leading-tight tracking-tight mb-5 sm:mb-6">
-                  Specialiserad sanering för känsliga och krävande miljöer
-                </h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold text-midnight leading-tight tracking-tight mb-5 sm:mb-6">
+                Specialiserad sanering för känsliga och krävande miljöer
+              </h1>
 
-                <p className="text-base sm:text-lg md:text-xl text-midnight/75 leading-relaxed font-light max-w-2xl mb-8 sm:mb-10">
-                  Vi hjälper privatpersoner, fastighetsägare och verksamheter med
-                  traumasanering, sanering vid dödsfall, luktsanering och teknisk
-                  rengöring med fokus på trygghet, respekt och noggrannhet.
-                </p>
+              <p className="text-base sm:text-lg md:text-xl text-midnight/75 leading-relaxed font-light max-w-2xl mb-8 sm:mb-10">
+                Vi hjälper privatpersoner, fastighetsägare och verksamheter med
+                sanering där diskretion, säkerhet och noggrannhet är avgörande.
+              </p>
 
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <a
-                    href="tel:0101234567"
-                    className="inline-flex items-center justify-center rounded-full bg-midnight text-white px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold hover:bg-midnight/90 transition-colors w-full sm:w-auto"
-                  >
-                    Kontakta oss
-                  </a>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <a
+                  href="tel:0101234567"
+                  className="inline-flex items-center justify-center rounded-full bg-midnight text-white px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold hover:bg-midnight/90 transition-colors w-full sm:w-auto"
+                >
+                  Kontakta oss
+                </a>
 
-                  <Link
-                    to="/tjanster"
-                    className="inline-flex items-center justify-center rounded-full border border-midnight/15 bg-white text-midnight px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold hover:border-midnight/30 transition-colors w-full sm:w-auto"
-                  >
-                    Se våra tjänster
-                  </Link>
-                </div>
-              </motion.div>
-
-              <motion.div
-                {...fadeInUp}
-                transition={{ ...fadeInUp.transition, delay: 0.12 }}
-                className="lg:col-span-5"
-              >
-                <div className="bg-white/85 backdrop-blur-sm border border-slate-200 rounded-3xl shadow-[0_10px_40px_rgba(15,23,42,0.08)] p-5 sm:p-6 md:p-7">
-                  <div className="flex items-start gap-4 mb-5">
-                    <div className="shrink-0 rounded-2xl bg-cyan-accent/10 p-3">
-                      <Shield className="w-6 h-6 text-cyan-accent" />
-                    </div>
-                    <div>
-                      <h2 className="text-lg sm:text-xl font-bold text-midnight mb-1">
-                        Trygg hantering i svåra situationer
-                      </h2>
-                      <p className="text-sm sm:text-base text-midnight/65 leading-relaxed">
-                        Strukturerat arbete med diskretion, respekt och tydligt fokus på säkerhet.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    {[
-                      "Traumasanering och biologisk sanering",
-                      "Sanering vid obevakat dödsfall",
-                      "Luktsanering i bostäder och lokaler",
-                      "Teknisk rengöring och hygienkontroll"
-                    ].map((item) => (
-                      <div
-                        key={item}
-                        className="flex items-center gap-3 rounded-2xl bg-slate-50 px-4 py-3"
-                      >
-                        <div className="w-2 h-2 rounded-full bg-cyan-accent shrink-0" />
-                        <p className="text-sm sm:text-base text-midnight/80">{item}</p>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="mt-6 pt-6 border-t border-slate-200">
-                    <Link
-                      to="/om-oss"
-                      className="inline-flex items-center gap-2 text-cyan-accent font-semibold hover:gap-3 transition-all"
-                    >
-                      Läs om vårt arbetssätt <ArrowRight className="w-4 h-4" />
-                    </Link>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
+                <Link
+                  to="/tjanster"
+                  className="inline-flex items-center justify-center rounded-full border border-midnight/15 bg-white text-midnight px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold hover:border-midnight/30 transition-colors w-full sm:w-auto"
+                >
+                  Se våra tjänster
+                </Link>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Service Pillars */}
+      {/* Services */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-14">
         <div className="max-w-7xl mx-auto">
           <motion.div className="text-center mb-12 sm:mb-16 md:mb-20" {...fadeInUp}>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-midnight">
-              Våra kärntjänster
+              Våra tjänster
             </h2>
             <p className="text-base sm:text-lg text-midnight/60 max-w-2xl mx-auto font-light leading-relaxed">
               Specialiserade tjänster för miljöer där vanlig rengöring inte räcker
@@ -230,28 +194,73 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Section */}
+      {/* Values / Trust */}
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-14 bg-slate-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+            <motion.div {...fadeInUp} className="lg:col-span-5">
+              <div className="sticky top-24">
+                <Shield className="w-12 h-12 sm:w-14 sm:h-14 text-cyan-accent mb-6" />
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-midnight mb-6 leading-tight">
+                  Trygg hantering i känsliga situationer
+                </h2>
+                <p className="text-base sm:text-lg text-midnight/65 font-light leading-relaxed max-w-xl">
+                  Vi arbetar metodiskt och med respekt i varje uppdrag. Fokus ligger
+                  på säker hantering, tydlig struktur och så liten påverkan som möjligt
+                  för boende, verksamhet och omgivning.
+                </p>
+              </div>
+            </motion.div>
+
+            <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+              {values.map((value, index) => (
+                <motion.div
+                  key={value.title}
+                  {...fadeInUp}
+                  transition={{ ...fadeInUp.transition, delay: index * 0.1 }}
+                  className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-7"
+                >
+                  <h3 className="text-lg sm:text-xl font-bold text-midnight mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-midnight/65 leading-relaxed font-light">
+                    {value.description}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-14 bg-midnight text-white">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div {...fadeInUp}>
-            <Shield className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-cyan-accent mx-auto mb-6 sm:mb-8" />
-
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
-              Respektfullt arbete med så liten påverkan som möjligt
+              Behöver du hjälp eller vill du veta mer?
             </h2>
 
-            <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed opacity-90 mb-8 sm:mb-12 max-w-3xl mx-auto">
-              Varje uppdrag planeras med fokus på säkerhet, diskret hantering och
-              tydlig struktur för att skapa trygghet för boende, verksamheter och
-              fastighetsägare.
+            <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed opacity-90 mb-8 sm:mb-10 max-w-3xl mx-auto">
+              Kontakta oss för en första dialog om uppdragets omfattning, behov och
+              förutsättningar. Vi återkommer så snart som möjligt.
             </p>
 
-            <Link
-              to="/om-oss"
-              className="inline-flex items-center justify-center border border-white/20 hover:border-white/40 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all text-sm sm:text-base"
-            >
-              Läs om oss
-            </Link>
+            <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+              <a
+                href="tel:0101234567"
+                className="inline-flex items-center justify-center rounded-full bg-white text-midnight px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold hover:bg-white/90 transition-colors w-full sm:w-auto"
+              >
+                Ring oss
+              </a>
+
+              <Link
+                to="/kontakt"
+                className="inline-flex items-center justify-center rounded-full border border-white/20 text-white px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold hover:border-white/40 transition-colors w-full sm:w-auto"
+              >
+                Gå till kontakt
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
