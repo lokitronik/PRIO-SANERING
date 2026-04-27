@@ -9,7 +9,9 @@ import {
   Wind,
   ShieldCheck,
   Box,
-  Sparkles
+  Sparkles,
+  Maximize,
+  Bird
 } from "lucide-react";
 
 const fadeInUp = {
@@ -63,6 +65,20 @@ const preventativeServices = [
       "Teknisk behandling med torrånga och ozon för utrymmen med luktproblem, stillastående miljöer eller behov av förebyggande hygieninsats i utvalda ytor.",
     icon: <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
     link: "/tjanster/forebyggande-hygienbehandling"
+  },
+  {
+    title: "Svåråtkomliga ytor",
+    description:
+      "Specialiserad rengöring och desinfektion av dolda eller svåråtkomliga utrymmen där standardinsatser inte räcker.",
+    icon: <Maximize className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
+    link: "/tjanster/svaratkomliga-ytor"
+  },
+  {
+    title: "Bird Blocker",
+    description:
+      "Förebyggande installationer som skyddar fastigheter och solpaneler mot fåglar och följdproblem i utsatta miljöer.",
+    icon: <Bird className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
+    link: "/tjanster/bird-blocker"
   }
 ];
 
@@ -96,11 +112,11 @@ export default function Home() {
         <title>Prio Sanering AB | Traumasanering, sanering vid dödsfall och luktsanering</title>
         <meta
           name="description"
-          content="Prio Sanering AB erbjuder specialiserade tjänster inom traumasanering, sanering vid dödsfall, luktsanering, förebyggande hygienbehandling med torrånga och ozon samt teknisk rengöring."
+          content="Prio Sanering AB erbjuder specialiserade tjänster inom traumasanering, sanering vid dödsfall, luktsanering, förebyggande hygienbehandling med torrånga och ozon, teknisk rengöring samt förebyggande fastighetsskydd."
         />
         <meta
           name="keywords"
-          content="traumasanering, sanering vid dödsfall, luktsanering, förebyggande hygienbehandling, torrånga, ozonbehandling, teknisk rengöring, biologisk sanering"
+          content="traumasanering, sanering vid dödsfall, luktsanering, förebyggande hygienbehandling, torrånga, ozonbehandling, teknisk rengöring, bird blocker, svåråtkomliga ytor, biologisk sanering"
         />
         <link rel="canonical" href={window.location.origin} />
       </Helmet>
@@ -205,7 +221,7 @@ export default function Home() {
             </h2>
             <p className="text-base sm:text-lg text-midnight/60 max-w-2xl mx-auto font-light leading-relaxed">
               Kompletterande insatser för utrymmen där man vill arbeta förebyggande
-              med hygien, luktkontroll och återkommande belastning i miljön.
+              med hygien, luktkontroll, skydd och återkommande belastning i miljön.
             </p>
           </motion.div>
 
