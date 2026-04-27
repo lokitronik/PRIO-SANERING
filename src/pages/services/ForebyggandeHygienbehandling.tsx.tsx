@@ -20,14 +20,15 @@ export default function ForebyggandeHygienbehandling() {
         <title>Förebyggande hygienbehandling | Prio Sanering AB</title>
         <meta
           name="description"
-          content="Förebyggande hygienbehandling med torrånga och ozon för utrymmen med luktproblem, stillastående miljöer och behov av teknisk hygieninsats."
+          content="Förebyggande hygienbehandling med torrånga och ozon för sommarstugor, bostäder, uthyrningsmiljöer och andra utrymmen med luktproblem, stillastående luft eller behov av teknisk hygieninsats."
         />
         <meta
           name="keywords"
-          content="förebyggande hygienbehandling, torrånga, ozonbehandling, luktproblem, hygieninsats, teknisk rengöring"
+          content="förebyggande hygienbehandling, torrånga, ozonbehandling, luktproblem, sommarstuga, hygieninsats, teknisk rengöring, förebyggande sanering"
         />
       </Helmet>
 
+      {/* Hero */}
       <motion.div className="text-center mb-20" {...fadeInUp}>
         <Sparkles className="w-16 h-16 text-cyan-accent mx-auto mb-8" />
         <h1 className="text-5xl md:text-6xl font-extrabold text-midnight mb-6">
@@ -35,11 +36,12 @@ export default function ForebyggandeHygienbehandling() {
         </h1>
         <p className="text-xl text-midnight/60 max-w-3xl mx-auto font-light leading-relaxed">
           En teknisk och förebyggande behandling med torrånga och ozon för
-          utvalda utrymmen där lukt, stillastående miljöer eller behov av
-          hygieninsats kräver mer än vanlig rengöring.
+          utrymmen där lukt, stillastående luft, säsongsstängda miljöer eller
+          hygienisk belastning kräver mer än vanlig rengöring.
         </p>
       </motion.div>
 
+      {/* Main intro */}
       <div className="mb-24">
         <motion.div
           className="bg-slate-50 p-12 md:p-20 rounded-[3rem] border border-midnight/5 shadow-sm"
@@ -53,13 +55,14 @@ export default function ForebyggandeHygienbehandling() {
               <p className="text-xl font-light text-midnight/80 leading-relaxed">
                 Behandlingen kombinerar torrånga på utvalda ytor med ozon som
                 kompletterande metod för luktbehandling och kontroll av
-                inomhusmiljön. Insatsen används i utrymmen där man vill arbeta
-                förebyggande och tekniskt, utan att presentera det som vanlig
-                städning.
+                inomhusmiljön. Den lämpar sig särskilt för miljöer som stått
+                stängda under längre perioder, för utrymmen med kvarvarande lukt
+                eller där man vill göra en teknisk hygieninsats innan rummet tas
+                i bruk igen.
               </p>
 
               <div className="space-y-6">
-                <div className="flex gap-4">
+                <div className="flex gap-4 items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-accent flex-shrink-0" />
                   <p className="text-midnight/70 font-light">
                     Torrånga används på utvalda ytor, textilier, kontaktpunkter
@@ -67,19 +70,20 @@ export default function ForebyggandeHygienbehandling() {
                   </p>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-accent flex-shrink-0" />
                   <p className="text-midnight/70 font-light">
-                    Ozon används som kompletterande behandling av lukt och luft
+                    Ozon används som kompletterande behandling av luft och lukt
                     i tomma utrymmen, alltid under kontrollerade former.
                   </p>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 items-start">
                   <CheckCircle2 className="w-6 h-6 text-cyan-accent flex-shrink-0" />
                   <p className="text-midnight/70 font-light">
-                    Behandlingen anpassas efter miljö, användning, material och
-                    behov av förebyggande hygieninsats.
+                    Behandlingen kan vara relevant i miljöer där man vill arbeta
+                    förebyggande mot kvarvarande hygienproblem i textilier,
+                    springor, kontaktpunkter och utvalda ytor.
                   </p>
                 </div>
               </div>
@@ -91,16 +95,16 @@ export default function ForebyggandeHygienbehandling() {
               </h3>
               <div className="space-y-5">
                 <p className="text-midnight/60 font-light leading-relaxed">
-                  Sommarstugor och bostäder som stått stängda under längre perioder
+                  Sommarstugor, fritidshus och bostäder som stått stängda under längre perioder
                 </p>
                 <p className="text-midnight/60 font-light leading-relaxed">
-                  Utrymmen med kvarvarande lukt av instängd luft, fukt, djur eller rök
+                  Utrymmen med kvarvarande lukt av instängd luft, fukt, djur, rök eller stillastående miljö
                 </p>
                 <p className="text-midnight/60 font-light leading-relaxed">
                   Tillfälligt boende, uthyrningsmiljöer och rum med återkommande användning
                 </p>
                 <p className="text-midnight/60 font-light leading-relaxed">
-                  Utvalda professionella miljöer där förebyggande hygien och luktkontroll är viktiga
+                  Utvalda professionella miljöer där förebyggande hygien och luktkontroll är viktiga inför ny användning
                 </p>
               </div>
             </div>
@@ -108,6 +112,7 @@ export default function ForebyggandeHygienbehandling() {
         </motion.div>
       </div>
 
+      {/* Benefits */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
         <motion.div
           className="bg-slate-50 p-10 rounded-3xl border-b-4 border-cyan-accent"
@@ -117,8 +122,8 @@ export default function ForebyggandeHygienbehandling() {
           <Shield className="w-10 h-10 text-cyan-accent mb-6" />
           <h3 className="text-2xl font-bold mb-4">Kontrollerad metod</h3>
           <p className="text-midnight/60 font-light">
-            Behandlingen utförs metodiskt och anpassas efter utrymme, material
-            och risknivå.
+            Behandlingen utförs metodiskt och anpassas efter utrymme, material,
+            användning och praktiska riskfaktorer.
           </p>
         </motion.div>
 
@@ -128,9 +133,10 @@ export default function ForebyggandeHygienbehandling() {
           transition={{ ...fadeInUp.transition, delay: 0.2 }}
         >
           <Wind className="w-10 h-10 text-cyan-accent mb-6" />
-          <h3 className="text-2xl font-bold mb-4">Luktbehandling</h3>
+          <h3 className="text-2xl font-bold mb-4">Lukt och miljö</h3>
           <p className="text-midnight/60 font-light">
-            Ozon används som ett komplement när luktproblem kräver mer än vanlig rengöring.
+            Ozon används som ett tekniskt komplement när luktproblem och
+            stillastående miljöer kräver mer än vanlig rengöring.
           </p>
         </motion.div>
 
@@ -143,11 +149,29 @@ export default function ForebyggandeHygienbehandling() {
           <h3 className="text-2xl font-bold mb-4">Förebyggande fokus</h3>
           <p className="text-midnight/60 font-light">
             En teknisk insats för utrymmen där man vill minska lukt, smutsbelastning
-            och hygieniska problem innan de växer vidare.
+            och hygieniska störningar innan de växer vidare.
           </p>
         </motion.div>
       </div>
 
+      {/* Seasonal angle */}
+      <div className="bg-slate-50 p-12 md:p-20 rounded-[3rem] mb-24">
+        <motion.div {...fadeInUp} className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-midnight">
+            Särskilt relevant inför säsong och återöppning
+          </h2>
+          <p className="text-lg text-midnight/65 font-light leading-relaxed">
+            I Sverige används många bostäder, fritidshus och tillfälliga boenden
+            periodvis. När ett utrymme öppnas igen efter längre stillestånd kan
+            lukt, instängd luft, smutsbelastning och hygieniska störningar i
+            textilier och ytor bli tydliga. En förebyggande behandling med
+            torrånga och ozon kan då vara ett tekniskt komplement innan
+            utrymmet tas i bruk igen.
+          </p>
+        </motion.div>
+      </div>
+
+      {/* Important to know */}
       <div className="bg-slate-50 p-12 md:p-20 rounded-[3rem] mb-24">
         <motion.h2
           className="text-3xl md:text-4xl font-bold mb-12 text-center"
@@ -160,10 +184,12 @@ export default function ForebyggandeHygienbehandling() {
           <motion.div className="flex gap-6" {...fadeInUp}>
             <CheckCircle2 className="w-8 h-8 text-cyan-accent flex-shrink-0" />
             <div>
-              <h4 className="text-xl font-bold mb-2">Ozon används endast i tomma utrymmen</h4>
+              <h4 className="text-xl font-bold mb-2">
+                Ozon används endast i tomma utrymmen
+              </h4>
               <p className="text-midnight/60 font-light">
                 Behandlingen genomförs utan personer eller djur i rummet och med
-                tydlig hantering av vädring och återgång.
+                tydlig hantering av vädring och återgång efter avslutad insats.
               </p>
             </div>
           </motion.div>
@@ -173,18 +199,21 @@ export default function ForebyggandeHygienbehandling() {
             {...fadeInUp}
             transition={{ ...fadeInUp.transition, delay: 0.1 }}
           >
-            <CheckCircle2 className="w-8 h-8 text-cyan-accent flex-shrink-0" />
+            <div>
+              <CheckCircle2 className="w-8 h-8 text-cyan-accent flex-shrink-0" />
+            </div>
             <div>
               <h4 className="text-xl font-bold mb-2">Bedömning från fall till fall</h4>
               <p className="text-midnight/60 font-light">
-                Metoden anpassas efter utrymmets storlek, material, luktbild och
-                behov av kompletterande behandling.
+                Metoden anpassas efter utrymmets storlek, material, luktbild,
+                användning och behov av kompletterande behandling.
               </p>
             </div>
           </motion.div>
         </div>
       </div>
 
+      {/* CTA */}
       <motion.div
         className="bg-midnight text-white p-12 md:p-20 rounded-[3rem] text-center"
         {...fadeInUp}
