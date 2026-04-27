@@ -135,18 +135,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </li>
               <li>
                 <Link
-                  to="/tjanster/forebyggande-hygienbehandling"
-                  className="hover:text-cyan-accent transition-colors"
-                >
-                  Förebyggande hygienbehandling
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/tjanster/technical-cleaning-b2b"
                   className="hover:text-cyan-accent transition-colors"
                 >
                   Teknisk rengöring & hygienkontroll
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/om-oss#minneshantering"
+                  className="hover:text-cyan-accent transition-colors"
+                >
+                  Minneshantering
                 </Link>
               </li>
             </ul>
@@ -155,6 +155,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               Förebyggande
             </h4>
             <ul className="space-y-4 text-sm font-medium text-midnight/70">
+              <li>
+                <Link
+                  to="/tjanster/forebyggande-hygienbehandling"
+                  className="hover:text-cyan-accent transition-colors"
+                >
+                  Förebyggande hygienbehandling
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/tjanster/svaratkomliga-ytor"
@@ -182,14 +190,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li>
                 <Link to="/om-oss" className="hover:text-cyan-accent transition-colors">
                   Om oss
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/om-oss#minneshantering"
-                  className="hover:text-cyan-accent transition-colors"
-                >
-                  Minneshantering
                 </Link>
               </li>
               <li>
