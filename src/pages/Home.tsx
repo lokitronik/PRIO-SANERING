@@ -18,7 +18,7 @@ const fadeInUp = {
   transition: { duration: 0.7, ease: [0.25, 1, 0.5, 1] }
 };
 
-const pillars = [
+const coreServices = [
   {
     title: "Sanering vid obevakat dödsfall",
     description:
@@ -41,13 +41,6 @@ const pillars = [
     link: "/tjanster/luktsanering"
   },
   {
-    title: "Förebyggande hygienbehandling",
-    description:
-      "Teknisk behandling med torrånga och ozon för utrymmen med luktproblem, stillastående miljöer eller behov av förebyggande hygieninsats i utvalda ytor.",
-    icon: <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
-    link: "/tjanster/forebyggande-hygienbehandling"
-  },
-  {
     title: "Teknisk rengöring & hygienkontroll",
     description:
       "Diskret och noggrant utförd teknisk rengöring för hotell, konferensmiljöer och andra verksamheter med höga krav på hygien och dokumentation.",
@@ -60,6 +53,16 @@ const pillars = [
       "Respektfull identifiering, sortering och hantering av personliga tillhörigheter efter överenskommelse.",
     icon: <Box className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
     link: "/om-oss#minneshantering"
+  }
+];
+
+const preventativeServices = [
+  {
+    title: "Förebyggande hygienbehandling",
+    description:
+      "Teknisk behandling med torrånga och ozon för utrymmen med luktproblem, stillastående miljöer eller behov av förebyggande hygieninsats i utvalda ytor.",
+    icon: <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
+    link: "/tjanster/forebyggande-hygienbehandling"
   }
 ];
 
@@ -150,11 +153,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Kärntjänster */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-14">
         <div className="max-w-7xl mx-auto">
           <motion.div className="text-center mb-12 sm:mb-16 md:mb-20" {...fadeInUp}>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-midnight">
-              Våra tjänster
+              Våra kärntjänster
             </h2>
             <p className="text-base sm:text-lg text-midnight/60 max-w-2xl mx-auto font-light leading-relaxed">
               Specialiserade tjänster för miljöer där vanlig rengöring inte räcker
@@ -163,25 +167,25 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
-            {pillars.map((pillar, index) => (
+            {coreServices.map((service, index) => (
               <motion.div
                 key={index}
                 className="group bg-slate-50 p-5 sm:p-6 md:p-8 rounded-3xl border border-slate-200 hover:border-cyan-accent/30 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
                 {...fadeInUp}
                 transition={{ ...fadeInUp.transition, delay: index * 0.08 }}
               >
-                <div className="mb-4 sm:mb-6">{pillar.icon}</div>
+                <div className="mb-4 sm:mb-6">{service.icon}</div>
 
                 <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-midnight leading-snug">
-                  {pillar.title}
+                  {service.title}
                 </h3>
 
                 <p className="text-sm sm:text-base text-midnight/70 font-light leading-relaxed mb-6 flex-grow">
-                  {pillar.description}
+                  {service.description}
                 </p>
 
                 <Link
-                  to={pillar.link}
+                  to={service.link}
                   className="text-cyan-accent font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all text-sm sm:text-base"
                 >
                   Läs mer <ArrowRight className="w-4 h-4 shrink-0" />
@@ -192,7 +196,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Förebyggande tjänster & tillval */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-14 bg-slate-50">
+        <div className="max-w-7xl mx-auto">
+          <motion.div className="text-center mb-12 sm:mb-16" {...fadeInUp}>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-midnight">
+              Förebyggande tjänster & tillval
+            </h2>
+            <p className="text-base sm:text-lg text-midnight/60 max-w-2xl mx-auto font-light leading-relaxed">
+              Kompletterande insatser för utrymmen där man vill arbeta förebyggande
+              med hygien, luktkontroll och återkommande belastning i miljön.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
+            {preventativeServices.map((service, index) => (
+              <motion.div
+                key={index}
+                className="group bg-white p-5 sm:p-6 md:p-8 rounded-3xl border border-slate-200 hover:border-cyan-accent/30 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
+                {...fadeInUp}
+                transition={{ ...fadeInUp.transition, delay: index * 0.08 }}
+              >
+                <div className="mb-4 sm:mb-6">{service.icon}</div>
+
+                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-midnight leading-snug">
+                  {service.title}
+                </h3>
+
+                <p className="text-sm sm:text-base text-midnight/70 font-light leading-relaxed mb-6 flex-grow">
+                  {service.description}
+                </p>
+
+                <Link
+                  to={service.link}
+                  className="text-cyan-accent font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all text-sm sm:text-base"
+                >
+                  Läs mer <ArrowRight className="w-4 h-4 shrink-0" />
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-14">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
             <motion.div {...fadeInUp} className="lg:col-span-5">
@@ -215,7 +262,7 @@ export default function Home() {
                   key={value.title}
                   {...fadeInUp}
                   transition={{ ...fadeInUp.transition, delay: index * 0.1 }}
-                  className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-7"
+                  className="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-7"
                 >
                   <h3 className="text-lg sm:text-xl font-bold text-midnight mb-3">
                     {value.title}
