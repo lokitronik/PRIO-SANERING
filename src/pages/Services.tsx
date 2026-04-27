@@ -9,7 +9,7 @@ import {
   Maximize,
   Bird,
   Box,
-  Zap,
+  Sparkles,
   ShieldCheck,
   Users
 } from "lucide-react";
@@ -25,7 +25,7 @@ const coreServices = [
     title: "Sanering vid obevakat dödsfall",
     description:
       "Diskret och professionell sanering efter obevakade dödsfall. Vi hanterar biologiskt material, lukt, dokumentation och återställande åtgärder med respekt och säkerhet.",
-icon: <HeartHandshake className="w-8 h-8 text-cyan-accent" />,
+    icon: <HeartHandshake className="w-8 h-8 text-cyan-accent" />,
     link: "/tjanster/sanering-dodstall"
   },
   {
@@ -50,14 +50,14 @@ icon: <HeartHandshake className="w-8 h-8 text-cyan-accent" />,
     link: "/om-oss#minneshantering"
   },
   {
-    title: "Lasersanering",
+    title: "Förebyggande hygienbehandling",
     description:
-      "Skonsam och precis lasersanering för gravstenar, sotpåverkade ytor och utvalda tekniska miljöer där traditionell rengöring riskerar att vara för grov.",
-    icon: <Zap className="w-8 h-8 text-cyan-accent" />,
-    link: "/tjanster/lasersanering"
+      "Förebyggande behandling med torrånga och ozon i utrymmen med kvarvarande lukt, stillastående luft eller behov av teknisk hygieninsats i utvalda ytor.",
+    icon: <Sparkles className="w-8 h-8 text-cyan-accent" />,
+    link: "/tjanster/forebyggande-hygienbehandling"
   },
   {
-   title: "Teknisk rengöring & hygienkontroll",
+    title: "Teknisk rengöring & hygienkontroll",
     description:
       "Diskret och noggrant utförd teknisk rengöring för hotell, konferensmiljöer och andra verksamheter med höga krav på hygien, dokumentation och återställning.",
     icon: <ShieldCheck className="w-8 h-8 text-cyan-accent" />,
@@ -94,11 +94,11 @@ export default function Services() {
         <title>Våra tjänster | Prio Sanering AB</title>
         <meta
           name="description"
-          content="Utforska våra specialiserade tjänster inom biologisk sanering, traumasanering, luktsanering, lasersanering, technical cleaning och förebyggande fastighetsskydd."
+          content="Utforska våra specialiserade tjänster inom biologisk sanering, traumasanering, luktsanering, förebyggande hygienbehandling med torrånga och ozon, teknisk rengöring och förebyggande fastighetsskydd."
         />
         <meta
           name="keywords"
-          content="saneringstjänster, traumasanering, luktsanering, dödsfallssanering, lasersanering, technical cleaning, bird blocker"
+          content="saneringstjänster, traumasanering, luktsanering, dödsfallssanering, förebyggande hygienbehandling, torrånga, ozonbehandling, teknisk rengöring, bird blocker"
         />
       </Helmet>
 
@@ -112,7 +112,6 @@ export default function Services() {
         </p>
       </motion.div>
 
-      {/* Core Services Section */}
       <div className="mb-32">
         <h2 className="text-3xl font-bold mb-12 border-b border-midnight/10 pb-4">
           Kärntjänster
@@ -141,7 +140,6 @@ export default function Services() {
         </div>
       </div>
 
-      {/* Preventative Services Section */}
       <div className="mb-32">
         <h2 className="text-3xl font-bold mb-12 border-b border-midnight/10 pb-4">
           Förebyggande tjänster & tillval
@@ -172,7 +170,6 @@ export default function Services() {
         </div>
       </div>
 
-      {/* Why Prio Sanering Section */}
       <section className="bg-midnight text-white p-12 md:p-20 rounded-[3rem]">
         <motion.div className="max-w-4xl mx-auto text-center" {...fadeInUp}>
           <Users className="w-16 h-16 text-cyan-accent mx-auto mb-8" />
