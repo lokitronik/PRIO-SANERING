@@ -13,7 +13,7 @@ import Contact from "./pages/Contact";
 import DeathSanitization from "./pages/services/DeathSanitization";
 import TraumaSanitization from "./pages/services/TraumaSanitization";
 import OdorSanitization from "./pages/services/OdorSanitization";
-import PreventiveHygieneTreatment from "./pages/services/PreventiveHygieneTreatment";
+import ForebyggandeHygienbehandling from "./pages/services/ForebyggandeHygienbehandling";
 import TechnicalCleaningB2B from "./pages/services/TechnicalCleaningB2B";
 import HardToReachDisinfection from "./pages/services/HardToReachDisinfection";
 import BirdBlocker from "./pages/services/BirdBlocker";
@@ -33,7 +33,7 @@ function AnimatedRoutes() {
         <Route path="/tjanster/luktsanering" element={<OdorSanitization />} />
         <Route
           path="/tjanster/forebyggande-hygienbehandling"
-          element={<PreventiveHygieneTreatment />}
+          element={<ForebyggandeHygienbehandling />}
         />
         <Route path="/tjanster/technical-cleaning-b2b" element={<TechnicalCleaningB2B />} />
         <Route path="/tjanster/svaratkomliga-ytor" element={<HardToReachDisinfection />} />
