@@ -23,12 +23,40 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold">
-          <Link to="/" className={`hover:text-cyan-accent transition-colors ${location.pathname === "/" ? "text-cyan-accent" : ""}`}>Hem</Link>
-          <Link to="/tjanster" className={`hover:text-cyan-accent transition-colors ${location.pathname.startsWith("/tjanster") ? "text-cyan-accent" : ""}`}>Tjänster</Link>
-          <Link to="/om-oss" className={`hover:text-cyan-accent transition-colors ${location.pathname === "/om-oss" ? "text-cyan-accent" : ""}`}>Om Oss</Link>
-          <Link to="/kontakt" className={`hover:text-cyan-accent transition-colors ${location.pathname === "/kontakt" ? "text-cyan-accent" : ""}`}>Kontakt</Link>
-          <a 
-            href="tel:0101234567" 
+          <Link
+            to="/"
+            className={`hover:text-cyan-accent transition-colors ${
+              location.pathname === "/" ? "text-cyan-accent" : ""
+            }`}
+          >
+            Hem
+          </Link>
+          <Link
+            to="/tjanster"
+            className={`hover:text-cyan-accent transition-colors ${
+              location.pathname.startsWith("/tjanster") ? "text-cyan-accent" : ""
+            }`}
+          >
+            Tjänster
+          </Link>
+          <Link
+            to="/om-oss"
+            className={`hover:text-cyan-accent transition-colors ${
+              location.pathname === "/om-oss" ? "text-cyan-accent" : ""
+            }`}
+          >
+            Om oss
+          </Link>
+          <Link
+            to="/kontakt"
+            className={`hover:text-cyan-accent transition-colors ${
+              location.pathname === "/kontakt" ? "text-cyan-accent" : ""
+            }`}
+          >
+            Kontakt
+          </Link>
+          <a
+            href="tel:0101234567"
             className="pulse-cyan bg-cyan-accent text-white px-6 py-2.5 rounded-full font-semibold flex items-center gap-2"
           >
             <Phone className="w-4 h-4" />
@@ -44,14 +72,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="fixed inset-0 z-[9998] bg-white pt-24 px-6 flex flex-col gap-6 text-xl font-bold"
         >
           <Link to="/">Hem</Link>
           <Link to="/tjanster">Tjänster</Link>
-          <Link to="/om-oss">Om Oss</Link>
+          <Link to="/om-oss">Om oss</Link>
           <Link to="/kontakt">Kontakt</Link>
           <a href="tel:0101234567" className="text-cyan-accent flex items-center gap-2">
             <Phone className="w-5 h-5" />
@@ -60,10 +88,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </motion.div>
       )}
 
-      {/* Main Content with Morphing Transition */}
-      <main className="pt-20">
-        {children}
-      </main>
+      {/* Main Content */}
+      <main className="pt-20">{children}</main>
 
       {/* Footer */}
       <footer className="py-20 px-6 md:px-12 bg-slate-50 border-t border-slate-200">
@@ -73,39 +99,122 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Logo className="scale-75 md:scale-90 origin-left" />
             </Link>
             <p className="text-midnight/60 font-light leading-relaxed max-w-md">
-              Prio Sanering AB är specialiserat på sanering i känsliga och krävande miljöer. Vi arbetar med teknisk noggrannhet, diskret hantering och respekt för varje situation.
+              Prio Sanering AB är specialiserat på sanering i känsliga och krävande miljöer.
+              Vi arbetar med teknisk noggrannhet, diskret hantering och respekt för varje situation.
             </p>
           </div>
+
           <div>
-            <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-midnight/40">Kärntjänster</h4>
+            <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-midnight/40">
+              Kärntjänster
+            </h4>
             <ul className="space-y-4 text-sm font-medium text-midnight/70">
-              <li><Link to="/tjanster/sanering-dodstall" className="hover:text-cyan-accent transition-colors">Sanering vid dödsfall</Link></li>
-              <li><Link to="/tjanster/traumasanering" className="hover:text-cyan-accent transition-colors">Traumasanering</Link></li>
-              <li><Link to="/tjanster/luktsanering" className="hover:text-cyan-accent transition-colors">Luktsanering</Link></li>
-              <li><Link to="/tjanster/lasersanering" className="hover:text-cyan-accent transition-colors">Lasersanering</Link></li>
-              <li><Link to="/tjanster/technical-cleaning-b2b" className="hover:text-cyan-accent transition-colors">Technical Cleaning B2B</Link></li>
+              <li>
+                <Link
+                  to="/tjanster/sanering-dodstall"
+                  className="hover:text-cyan-accent transition-colors"
+                >
+                  Sanering vid dödsfall
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/tjanster/traumasanering"
+                  className="hover:text-cyan-accent transition-colors"
+                >
+                  Traumasanering
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/tjanster/luktsanering"
+                  className="hover:text-cyan-accent transition-colors"
+                >
+                  Luktsanering
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/tjanster/forebyggande-hygienbehandling"
+                  className="hover:text-cyan-accent transition-colors"
+                >
+                  Förebyggande hygienbehandling
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/tjanster/technical-cleaning-b2b"
+                  className="hover:text-cyan-accent transition-colors"
+                >
+                  Teknisk rengöring & hygienkontroll
+                </Link>
+              </li>
             </ul>
-            <h4 className="font-bold mt-8 mb-6 uppercase tracking-widest text-xs text-midnight/40">Förebyggande</h4>
+
+            <h4 className="font-bold mt-8 mb-6 uppercase tracking-widest text-xs text-midnight/40">
+              Förebyggande
+            </h4>
             <ul className="space-y-4 text-sm font-medium text-midnight/70">
-              <li><Link to="/tjanster/svaratkomliga-ytor" className="hover:text-cyan-accent transition-colors">Svåråtkomliga ytor</Link></li>
-              <li><Link to="/tjanster/bird-blocker" className="hover:text-cyan-accent transition-colors">Bird Blocker</Link></li>
+              <li>
+                <Link
+                  to="/tjanster/svaratkomliga-ytor"
+                  className="hover:text-cyan-accent transition-colors"
+                >
+                  Svåråtkomliga ytor
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/tjanster/bird-blocker"
+                  className="hover:text-cyan-accent transition-colors"
+                >
+                  Bird Blocker
+                </Link>
+              </li>
             </ul>
           </div>
+
           <div>
-            <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-midnight/40">Företaget</h4>
+            <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-midnight/40">
+              Företaget
+            </h4>
             <ul className="space-y-4 text-sm font-medium text-midnight/70">
-              <li><Link to="/om-oss" className="hover:text-cyan-accent transition-colors">Om Oss</Link></li>
-              <li><Link to="/om-oss#minneshantering" className="hover:text-cyan-accent transition-colors">Minneshantering</Link></li>
-              <li><Link to="/kontakt" className="hover:text-cyan-accent transition-colors">Kontakt</Link></li>
-              <li><a href="tel:0101234567" className="hover:text-cyan-accent transition-colors">Jour dygnet runt</a></li>
+              <li>
+                <Link to="/om-oss" className="hover:text-cyan-accent transition-colors">
+                  Om oss
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/om-oss#minneshantering"
+                  className="hover:text-cyan-accent transition-colors"
+                >
+                  Minneshantering
+                </Link>
+              </li>
+              <li>
+                <Link to="/kontakt" className="hover:text-cyan-accent transition-colors">
+                  Kontakt
+                </Link>
+              </li>
+              <li>
+                <a href="tel:0101234567" className="hover:text-cyan-accent transition-colors">
+                  Jour dygnet runt
+                </a>
+              </li>
             </ul>
           </div>
         </div>
+
         <div className="max-w-7xl mx-auto pt-8 border-t border-midnight/5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-midnight/40">
           <div>© 2026 Prio Sanering AB. Alla rättigheter förbehållna.</div>
           <div className="flex gap-6">
-            <Link to="/integritetspolicy" className="hover:text-cyan-accent transition-colors">Integritetspolicy</Link>
-            <Link to="/allmanna-villkor" className="hover:text-cyan-accent transition-colors">Allmänna villkor</Link>
+            <Link to="/integritetspolicy" className="hover:text-cyan-accent transition-colors">
+              Integritetspolicy
+            </Link>
+            <Link to="/allmanna-villkor" className="hover:text-cyan-accent transition-colors">
+              Allmänna villkor
+            </Link>
           </div>
         </div>
       </footer>
