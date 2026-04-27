@@ -32,7 +32,7 @@ export default function TechnicalCleaningB2B() {
         {...fadeInUp}
       >
         <ShieldCheck className="w-16 h-16 text-cyan-accent mx-auto mb-8" />
-        <h1 className="text-5xl md:text-6xl font-extrabold text-midnight mb-6">Technical Cleaning B2B</h1>
+        <h1 className="text-5xl md:text-6xl font-extrabold text-midnight mb-6">Teknisk rengöring & hygienkontroll</h1>
         <p className="text-xl text-midnight/60 max-w-3xl mx-auto font-light leading-relaxed">
           Biosäkerhet för Hotell & Airbnb. Vi använder medicinsk sterilisering med VHP (Vaporized Hydrogen Peroxide) och inspektion med violett ljus för att garantera en biologiskt säker miljö.
         </p>
