@@ -7,9 +7,9 @@ import {
   HeartHandshake,
   ArrowRight,
   Wind,
-  Zap,
   ShieldCheck,
-  Box
+  Box,
+  Sparkles
 } from "lucide-react";
 
 const fadeInUp = {
@@ -41,11 +41,11 @@ const pillars = [
     link: "/tjanster/luktsanering"
   },
   {
-    title: "Lasersanering",
+    title: "Förebyggande hygienbehandling",
     description:
-      "Skonsam och precis lasersanering för gravstenar, sotpåverkade ytor och utvalda tekniska miljöer där traditionell rengöring riskerar att vara för grov.",
-    icon: <Zap className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
-    link: "/tjanster/lasersanering"
+      "Teknisk behandling med torrånga och ozon för utrymmen med luktproblem, stillastående miljöer eller behov av förebyggande hygieninsats i utvalda ytor.",
+    icon: <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
+    link: "/tjanster/forebyggande-hygienbehandling"
   },
   {
     title: "Teknisk rengöring & hygienkontroll",
@@ -93,16 +93,15 @@ export default function Home() {
         <title>Prio Sanering AB | Traumasanering, sanering vid dödsfall och luktsanering</title>
         <meta
           name="description"
-          content="Prio Sanering AB erbjuder specialiserade tjänster inom traumasanering, sanering vid dödsfall, luktsanering, lasersanering och teknisk rengöring."
+          content="Prio Sanering AB erbjuder specialiserade tjänster inom traumasanering, sanering vid dödsfall, luktsanering, förebyggande hygienbehandling med torrånga och ozon samt teknisk rengöring."
         />
         <meta
           name="keywords"
-          content="traumasanering, sanering vid dödsfall, luktsanering, lasersanering, teknisk rengöring, biologisk sanering"
+          content="traumasanering, sanering vid dödsfall, luktsanering, förebyggande hygienbehandling, torrånga, ozonbehandling, teknisk rengöring, biologisk sanering"
         />
         <link rel="canonical" href={window.location.origin} />
       </Helmet>
 
-      {/* Hero */}
       <section className="relative min-h-[100svh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
@@ -151,7 +150,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-14">
         <div className="max-w-7xl mx-auto">
           <motion.div className="text-center mb-12 sm:mb-16 md:mb-20" {...fadeInUp}>
@@ -194,7 +192,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Values / Trust */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-14 bg-slate-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
@@ -233,7 +230,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-14 bg-midnight text-white">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div {...fadeInUp}>
