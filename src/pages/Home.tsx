@@ -10,8 +10,7 @@ import {
   ShieldCheck,
   Box,
   Sparkles,
-  Maximize,
-  Bird
+  Maximize
 } from "lucide-react";
 
 const fadeInUp = {
@@ -43,13 +42,6 @@ const coreServices = [
     link: "/tjanster/luktsanering"
   },
   {
-    title: "Teknisk rengöring & hygienkontroll",
-    description:
-      "Diskret och noggrant utförd teknisk rengöring för hotell, konferensmiljöer och andra verksamheter med höga krav på hygien och dokumentation.",
-    icon: <ShieldCheck className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
-    link: "/tjanster/technical-cleaning-b2b"
-  },
-  {
     title: "Hantering av personliga tillhörigheter",
     description:
       "Respektfull identifiering, sortering och hantering av personliga tillhörigheter efter överenskommelse.",
@@ -67,18 +59,18 @@ const preventativeServices = [
     link: "/tjanster/forebyggande-hygienbehandling"
   },
   {
+    title: "Teknisk rengöring & hygienkontroll",
+    description:
+      "Diskret och noggrant utförd teknisk rengöring för hotell, konferensmiljöer och andra verksamheter med höga krav på hygien, dokumentation och återställning.",
+    icon: <ShieldCheck className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
+    link: "/tjanster/technical-cleaning-b2b"
+  },
+  {
     title: "Svåråtkomliga ytor",
     description:
       "Specialiserad rengöring och desinfektion av dolda eller svåråtkomliga utrymmen där standardinsatser inte räcker.",
     icon: <Maximize className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
     link: "/tjanster/svaratkomliga-ytor"
-  },
-  {
-    title: "Bird Blocker",
-    description:
-      "Förebyggande installationer som skyddar fastigheter och solpaneler mot fåglar och följdproblem i utsatta miljöer.",
-    icon: <Bird className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-accent" />,
-    link: "/tjanster/bird-blocker"
   }
 ];
 
@@ -112,15 +104,16 @@ export default function Home() {
         <title>Prio Sanering AB | Traumasanering, sanering vid dödsfall och luktsanering</title>
         <meta
           name="description"
-          content="Prio Sanering AB erbjuder specialiserade tjänster inom traumasanering, sanering vid dödsfall, luktsanering, förebyggande hygienbehandling med torrånga och ozon, teknisk rengöring samt förebyggande fastighetsskydd."
+          content="Prio Sanering AB erbjuder specialiserade tjänster inom traumasanering, sanering vid dödsfall, luktsanering, förebyggande hygienbehandling med torrånga och ozon, teknisk rengöring och sanering av svåråtkomliga ytor."
         />
         <meta
           name="keywords"
-          content="traumasanering, sanering vid dödsfall, luktsanering, förebyggande hygienbehandling, torrånga, ozonbehandling, teknisk rengöring, bird blocker, svåråtkomliga ytor, biologisk sanering"
+          content="traumasanering, sanering vid dödsfall, luktsanering, förebyggande hygienbehandling, torrånga, ozonbehandling, teknisk rengöring, svåråtkomliga ytor, biologisk sanering"
         />
         <link rel="canonical" href={window.location.origin} />
       </Helmet>
 
+      {/* Hero */}
       <section className="relative min-h-[100svh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
@@ -221,7 +214,7 @@ export default function Home() {
             </h2>
             <p className="text-base sm:text-lg text-midnight/60 max-w-2xl mx-auto font-light leading-relaxed">
               Kompletterande insatser för utrymmen där man vill arbeta förebyggande
-              med hygien, luktkontroll, skydd och återkommande belastning i miljön.
+              med hygien, luktkontroll och återkommande belastning i miljön.
             </p>
           </motion.div>
 
@@ -255,6 +248,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Values */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-14">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
@@ -293,6 +287,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-14 bg-midnight text-white">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div {...fadeInUp}>
