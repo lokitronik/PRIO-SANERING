@@ -16,13 +16,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-white text-midnight font-sans antialiased">
       {/* Global Sticky Header */}
-      <nav className="fixed top-0 w-full z-[9999] bg-white/70 backdrop-blur-xl border-b border-midnight/5 py-4 px-6 md:px-12 flex justify-between items-center">
-        <Link to="/" className="flex items-center">
-          <Logo className="scale-75 md:scale-90 origin-left" />
+      <nav className="fixed top-0 w-full z-[9999] bg-white/70 backdrop-blur-xl border-b border-midnight/5 py-3 sm:py-4 px-4 sm:px-6 md:px-12 flex justify-between items-center">
+        <Link to="/" className="flex items-center min-w-0">
+          <Logo className="scale-75 sm:scale-80 md:scale-90 origin-left" />
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8 text-sm font-semibold">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-semibold">
           <Link
             to="/"
             className={`hover:text-cyan-accent transition-colors ${
@@ -57,7 +57,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </Link>
           <a
             href="tel:0101234567"
-            className="pulse-cyan bg-cyan-accent text-white px-6 py-2.5 rounded-full font-semibold flex items-center gap-2"
+            className="pulse-cyan bg-cyan-accent text-white px-5 lg:px-6 py-2.5 rounded-full font-semibold flex items-center gap-2 whitespace-nowrap"
           >
             <Phone className="w-4 h-4" />
             010-XXX XX XX
@@ -65,23 +65,27 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button className="md:hidden text-midnight" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <X /> : <Menu />}
+        <button
+          className="md:hidden text-midnight p-2 -mr-2"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? "Stäng meny" : "Öppna meny"}
+        >
+          {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </nav>
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: -16 }}
           animate={{ opacity: 1, y: 0 }}
-          className="fixed inset-0 z-[9998] bg-white pt-24 px-6 flex flex-col gap-6 text-xl font-bold"
+          className="fixed inset-0 z-[9998] bg-white pt-24 px-6 flex flex-col gap-6 text-lg sm:text-xl font-bold"
         >
           <Link to="/">Hem</Link>
           <Link to="/tjanster">Tjänster</Link>
           <Link to="/om-oss">Om oss</Link>
           <Link to="/kontakt">Kontakt</Link>
-          <a href="tel:0101234567" className="text-cyan-accent flex items-center gap-2">
+          <a href="tel:0101234567" className="text-cyan-accent flex items-center gap-2 pt-2">
             <Phone className="w-5 h-5" />
             010-XXX XX XX
           </a>
@@ -89,26 +93,26 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       )}
 
       {/* Main Content */}
-      <main className="pt-20">{children}</main>
+      <main className="pt-20 sm:pt-20">{children}</main>
 
       {/* Footer */}
-      <footer className="py-20 px-6 md:px-12 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <footer className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 sm:gap-12 mb-12 sm:mb-16">
           <div className="col-span-1 md:col-span-2">
-            <Link to="/" className="inline-block mb-8">
-              <Logo className="scale-75 md:scale-90 origin-left" />
+            <Link to="/" className="inline-block mb-6 sm:mb-8">
+              <Logo className="scale-75 sm:scale-80 md:scale-90 origin-left" />
             </Link>
-            <p className="text-midnight/60 font-light leading-relaxed max-w-md">
+            <p className="text-sm sm:text-base text-midnight/60 font-light leading-relaxed max-w-md">
               Prio Sanering AB är specialiserat på sanering i känsliga och krävande miljöer.
               Vi arbetar med teknisk noggrannhet, diskret hantering och respekt för varje situation.
             </p>
           </div>
 
           <div>
-            <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-midnight/40">
+            <h4 className="font-bold mb-5 sm:mb-6 uppercase tracking-widest text-xs text-midnight/40">
               Kärntjänster
             </h4>
-            <ul className="space-y-4 text-sm font-medium text-midnight/70">
+            <ul className="space-y-3 sm:space-y-4 text-sm font-medium text-midnight/70">
               <li>
                 <Link
                   to="/tjanster/sanering-dodstall"
@@ -135,14 +139,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </li>
               <li>
                 <Link
-                  to="/tjanster/technical-cleaning-b2b"
-                  className="hover:text-cyan-accent transition-colors"
-                >
-                  Teknisk rengöring & hygienkontroll
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/om-oss#minneshantering"
                   className="hover:text-cyan-accent transition-colors"
                 >
@@ -151,10 +147,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </li>
             </ul>
 
-            <h4 className="font-bold mt-8 mb-6 uppercase tracking-widest text-xs text-midnight/40">
+            <h4 className="font-bold mt-7 sm:mt-8 mb-5 sm:mb-6 uppercase tracking-widest text-xs text-midnight/40">
               Förebyggande
             </h4>
-            <ul className="space-y-4 text-sm font-medium text-midnight/70">
+            <ul className="space-y-3 sm:space-y-4 text-sm font-medium text-midnight/70">
               <li>
                 <Link
                   to="/tjanster/forebyggande-hygienbehandling"
@@ -165,28 +161,28 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </li>
               <li>
                 <Link
+                  to="/tjanster/technical-cleaning-b2b"
+                  className="hover:text-cyan-accent transition-colors"
+                >
+                  Teknisk rengöring & hygienkontroll
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/tjanster/svaratkomliga-ytor"
                   className="hover:text-cyan-accent transition-colors"
                 >
                   Svåråtkomliga ytor
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/tjanster/bird-blocker"
-                  className="hover:text-cyan-accent transition-colors"
-                >
-                  Bird Blocker
-                </Link>
-              </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-midnight/40">
+            <h4 className="font-bold mb-5 sm:mb-6 uppercase tracking-widest text-xs text-midnight/40">
               Företaget
             </h4>
-            <ul className="space-y-4 text-sm font-medium text-midnight/70">
+            <ul className="space-y-3 sm:space-y-4 text-sm font-medium text-midnight/70">
               <li>
                 <Link to="/om-oss" className="hover:text-cyan-accent transition-colors">
                   Om oss
@@ -206,9 +202,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto pt-8 border-t border-midnight/5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-midnight/40">
-          <div>© 2026 Prio Sanering AB. Alla rättigheter förbehållna.</div>
-          <div className="flex gap-6">
+        <div className="max-w-7xl mx-auto pt-6 sm:pt-8 border-t border-midnight/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs sm:text-sm text-midnight/40">
+          <div className="text-center md:text-left">
+            © 2026 Prio Sanering AB. Alla rättigheter förbehållna.
+          </div>
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             <Link to="/integritetspolicy" className="hover:text-cyan-accent transition-colors">
               Integritetspolicy
             </Link>
