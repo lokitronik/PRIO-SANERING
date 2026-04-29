@@ -16,7 +16,6 @@ import OdorSanitization from "./pages/services/OdorSanitization";
 import ForebyggandeHygienbehandling from "./pages/services/ForebyggandeHygienbehandling";
 import TechnicalCleaningB2B from "./pages/services/TechnicalCleaningB2B";
 import HardToReachDisinfection from "./pages/services/HardToReachDisinfection";
-import BirdBlocker from "./pages/services/BirdBlocker";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 
@@ -37,7 +36,6 @@ function AnimatedRoutes() {
         />
         <Route path="/tjanster/technical-cleaning-b2b" element={<TechnicalCleaningB2B />} />
         <Route path="/tjanster/svaratkomliga-ytor" element={<HardToReachDisinfection />} />
-        <Route path="/tjanster/bird-blocker" element={<BirdBlocker />} />
         <Route path="/om-oss" element={<About />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/integritetspolicy" element={<PrivacyPolicy />} />
