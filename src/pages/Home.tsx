@@ -117,12 +117,12 @@ export default function Home() {
     >
       <Helmet>
         <title>
-          Nexe Sanering AB | Traumasanering, sanering vid dödsfall och
+          NEXE SPECIALSANERING | Traumasanering, sanering vid dödsfall och
           luktsanering
         </title>
         <meta
           name="description"
-          content="Nexe Sanering AB erbjuder specialiserade tjänster inom traumasanering, sanering vid dödsfall, socialsanering, luktsanering, förebyggande hygienbehandling med torrånga och hydroxylteknik, teknisk rengöring och sanering av svåråtkomliga ytor."
+          content="NEXE SPECIALSANERING erbjuder specialiserade tjänster inom traumasanering, sanering vid dödsfall, socialsanering, luktsanering, förebyggande hygienbehandling med torrånga och hydroxylteknik, teknisk rengöring och sanering av svåråtkomliga ytor."
         />
         <meta
           name="keywords"

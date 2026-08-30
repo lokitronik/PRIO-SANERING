@@ -17,8 +17,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-white text-midnight font-sans antialiased">
       {/* Global Sticky Header */}
       <nav className="fixed top-0 w-full z-[9999] bg-white/70 backdrop-blur-xl border-b border-midnight/5 py-3 sm:py-4 px-4 sm:px-6 md:px-12 flex justify-between items-center">
-        <Link to="/" className="flex items-center min-w-0">
-          <Logo className="scale-75 sm:scale-80 md:scale-90 origin-left" />
+        <Link to="/" className="flex items-center min-w-0" id="header-brand-logo">
+          <Logo imgClassName="h-8 sm:h-9 md:h-10 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
@@ -119,12 +119,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <Link to="/" className="inline-block mb-6 sm:mb-8">
-              <Logo className="scale-75 sm:scale-80 md:scale-90 origin-left" />
+            <Link to="/" className="inline-block mb-6 sm:mb-8" id="footer-brand-logo">
+              <Logo imgClassName="h-9 sm:h-10 md:h-11 w-auto" />
             </Link>
 
             <p className="text-sm sm:text-base text-midnight/60 font-light leading-relaxed max-w-md">
-              NEXE SANERING är en del av NEXE GROUP AB och är specialiserat på
+              NEXE SPECIALSANERING är en del av NEXE GROUP AB och är specialiserat på
               sanering i känsliga och krävande miljöer. Vi arbetar med teknisk
               noggrannhet, diskret hantering och respekt för varje situation.
             </p>

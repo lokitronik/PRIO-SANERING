@@ -65,7 +65,7 @@ export default function Contact() {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!e.target.files) return;
 
-    const selectedFiles = Array.from(e.target.files);
+    const selectedFiles: File[] = Array.from(e.target.files);
     const allowedFiles = selectedFiles.filter((file) =>
       file.type.startsWith("image/")
     );
@@ -106,14 +106,14 @@ export default function Contact() {
       className="py-20 px-5 sm:px-6 md:px-10 lg:px-12 max-w-7xl mx-auto"
     >
       <Helmet>
-        <title>Kontakta oss | Nexe Sanering AB</title>
+        <title>Kontakta oss | NEXE SPECIALSANERING</title>
         <meta
           name="description"
-          content="Kontakta Nexe Sanering AB för hjälp med sanering, trauma, dödsfall, luktproblem, hygienbehandling och teknisk rengöring. Beskriv ditt ärende och bifoga bilder vid behov."
+          content="Kontakta NEXE SPECIALSANERING för hjälp med sanering, trauma, dödsfall, luktproblem, hygienbehandling och teknisk rengöring. Beskriv ditt ärende och bifoga bilder vid behov."
         />
         <meta
           name="keywords"
-          content="kontakta sanering, akut sanering, traumasanering, sanering dödsfall, luktproblem, förebyggande hygienbehandling, teknisk rengöring, hygien sanering, nexe sanering kontakt"
+          content="kontakta sanering, akut sanering, specialsanering, traumasanering, sanering dödsfall, luktproblem, förebyggande hygienbehandling, teknisk rengöring, hygien sanering, nexe specialsanering kontakt"
         />
       </Helmet>
 
@@ -357,7 +357,7 @@ export default function Contact() {
               />
 
               <span className="text-sm text-midnight/60 leading-relaxed">
-                Jag samtycker till att Nexe Sanering AB behandlar mina
+                Jag samtycker till att NEXE SPECIALSANERING (NEXE GROUP AB) behandlar mina
                 personuppgifter för att kunna hantera min förfrågan. Läs mer i
                 vår integritetspolicy.
               </span>
@@ -439,7 +439,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="mailto:info@nexesanering.se"
+                href="mailto:info@nexegroup.se"
                 className="flex items-center gap-5 group"
               >
                 <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
@@ -451,7 +451,7 @@ export default function Contact() {
                     E-post
                   </p>
                   <p className="text-lg md:text-xl font-bold break-all">
-                    info@nexesanering.se
+                    info@nexegroup.se
                   </p>
                 </div>
               </a>

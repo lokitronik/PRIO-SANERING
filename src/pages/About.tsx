@@ -51,11 +51,11 @@ export default function About() {
       className="py-14 sm:py-16 md:py-24 px-4 sm:px-6 md:px-10 lg:px-12 max-w-7xl mx-auto"
     >
       <Helmet>
-        <title>Om oss | NEXE SANERING</title>
+        <title>Om oss | NEXE SPECIALSANERING</title>
 
         <meta
           name="description"
-          content="Lär känna NEXE SANERING, en del av NEXE GROUP AB. Vi arbetar med specialiserad sanering, teknisk rengöring och kontrollerade arbetsmetoder i känsliga och krävande miljöer."
+          content="Lär känna NEXE SPECIALSANERING, en del av NEXE GROUP AB. Vi arbetar med specialiserad sanering, teknisk rengöring och kontrollerade arbetsmetoder i känsliga och krävande miljöer."
         />
       </Helmet>
 
@@ -70,11 +70,11 @@ export default function About() {
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-midnight mb-5 sm:mb-6 leading-tight">
-          Om NEXE SANERING
+          Om NEXE SPECIALSANERING
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl text-midnight/60 max-w-3xl mx-auto font-light leading-relaxed">
-          NEXE SANERING är en del av NEXE GROUP AB och är specialiserat på
+          NEXE SPECIALSANERING är en del av NEXE GROUP AB och är specialiserat på
           sanering i miljöer där hygien, skyddsrutiner, biologiska risker och
           kontrollerade arbetsmetoder är avgörande.
         </p>

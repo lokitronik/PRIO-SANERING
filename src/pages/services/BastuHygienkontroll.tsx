@@ -39,7 +39,7 @@ export default function BastuHygienkontroll() {
       className="py-24 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden"
     >
       <Helmet>
-        <title>Bastuhygien – Teknisk mikrobiell kontroll | Nexe Sanering AB</title>
+        <title>Bastuhygien – Teknisk mikrobiell kontroll | NEXE SPECIALSANERING</title>
         <meta
           name="description"
           content="Avancerad bastuhygien med teknisk desinfektion, ATP-verifiering och borttagning av biofilm i kommersiella miljöer."
@@ -218,7 +218,7 @@ export default function BastuHygienkontroll() {
             </h2>
           </div>
           <p className="text-lg md:text-xl font-light opacity-80 mb-14 leading-relaxed max-w-3xl">
-            Prio Sanerings metod bygger på avancerad vetenskap. Vi applicerar en flerstegs desinfektionsprocess 
+            NEXE SPECIALSANERINGs metod bygger på avancerad vetenskap. Vi applicerar en flerstegs desinfektionsprocess 
             som bryter ner biofilmen utan att skada det känsliga bastuträet eller lämna hälsofarliga kemikalierester.
           </p>
 

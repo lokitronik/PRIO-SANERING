@@ -17,10 +17,10 @@ export default function TermsAndConditions() {
       className="py-24 px-6 md:px-12 max-w-4xl mx-auto"
     >
       <Helmet>
-        <title>Allmänna villkor | NEXE SANERING</title>
+        <title>Allmänna villkor | NEXE SPECIALSANERING</title>
         <meta
           name="description"
-          content="Allmänna villkor för tjänster som tillhandahålls av NEXE GROUP AB under varumärket NEXE SANERING."
+          content="Allmänna villkor för tjänster som tillhandahålls av NEXE GROUP AB under varumärket NEXE SPECIALSANERING."
         />
       </Helmet>
 
@@ -33,7 +33,7 @@ export default function TermsAndConditions() {
 
         <p className="text-midnight/60 text-lg leading-relaxed mb-8">
           Dessa allmänna villkor gäller för tjänster som tillhandahålls av
-          NEXE GROUP AB under varumärket NEXE SANERING till privatpersoner och
+          NEXE GROUP AB under varumärket NEXE SPECIALSANERING till privatpersoner och
           företagskunder.
         </p>
       </motion.div>
@@ -46,7 +46,7 @@ export default function TermsAndConditions() {
           </h2>
 
           <p>
-            NEXE GROUP AB, under varumärket NEXE SANERING, åtar sig att utföra
+            NEXE GROUP AB, under varumärket NEXE SPECIALSANERING, åtar sig att utföra
             sanerings- och rengöringstjänster enligt överenskommelse med
             kunden. Specifikation av tjänsten, omfattningen av uppdraget och
             eventuella särskilda villkor framgår av offert eller
@@ -95,7 +95,7 @@ export default function TermsAndConditions() {
 
           <p>
             NEXE GROUP AB innehar ansvarsförsäkring för de arbeten som utförs
-            inom ramen för NEXE SANERING. NEXE GROUP AB ansvarar för skador
+            inom ramen för NEXE SPECIALSANERING. NEXE GROUP AB ansvarar för skador
             som orsakas genom vårdslöshet av bolaget eller dess personal i
             samband med utförandet av uppdraget, i den utsträckning som följer
             av tillämplig lag.
@@ -162,7 +162,7 @@ export default function TermsAndConditions() {
           </h2>
 
           <p>
-            Tjänsterna under varumärket NEXE SANERING tillhandahålls av:
+            Tjänsterna under varumärket NEXE SPECIALSANERING tillhandahålls av:
           </p>
 
           <div className="mt-5 bg-slate-50 border border-slate-200 rounded-2xl p-6">
@@ -179,7 +179,7 @@ export default function TermsAndConditions() {
             </p>
 
             <p>
-              E-post: [E-POST]
+              E-post: info@nexegroup.se
             </p>
 
             <p>

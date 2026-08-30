@@ -17,10 +17,10 @@ export default function PrivacyPolicy() {
       className="py-24 px-6 md:px-12 max-w-4xl mx-auto"
     >
       <Helmet>
-        <title>Integritetspolicy | NEXE SANERING</title>
+        <title>Integritetspolicy | NEXE SPECIALSANERING</title>
         <meta
           name="description"
-          content="Information om hur NEXE GROUP AB behandlar dina personuppgifter inom NEXE SANERING i enlighet med GDPR."
+          content="Information om hur NEXE GROUP AB behandlar dina personuppgifter inom NEXE SPECIALSANERING i enlighet med GDPR."
         />
       </Helmet>
 
@@ -32,10 +32,10 @@ export default function PrivacyPolicy() {
         </h1>
 
         <p className="text-midnight/60 text-lg leading-relaxed mb-8">
-          Din integritet är viktig för oss på NEXE SANERING. Denna policy
+          Din integritet är viktig för oss på NEXE SPECIALSANERING. Denna policy
           beskriver hur NEXE GROUP AB behandlar dina personuppgifter i samband
           med tjänster och kommunikation som sker under varumärket NEXE
-          SANERING, i enlighet med dataskyddsförordningen (GDPR).
+          SPECIALSANERING, i enlighet med dataskyddsförordningen (GDPR).
         </p>
       </motion.div>
 
@@ -157,7 +157,7 @@ export default function PrivacyPolicy() {
 
           <p>
             Personuppgiftsansvarig för den behandling av personuppgifter som
-            sker inom ramen för NEXE SANERING är:
+            sker inom ramen för NEXE SPECIALSANERING är:
           </p>
 
           <div className="mt-5 bg-slate-50 border border-slate-200 rounded-2xl p-6">
@@ -174,7 +174,7 @@ export default function PrivacyPolicy() {
             </p>
 
             <p>
-              E-post: info@nexesanering.se
+              E-post: info@nexegroup.se
             </p>
 
             <p>

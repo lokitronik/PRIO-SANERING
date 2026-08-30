@@ -17,7 +17,7 @@ export default function BirdBlocker() {
       className="py-24 px-6 md:px-12 max-w-7xl mx-auto"
     >
       <Helmet>
-        <title>Bird Blocker & Fågelsäkring | Prio Sanering AB</title>
+        <title>Bird Blocker & Fågelsäkring | NEXE SPECIALSANERING</title>
         <meta name="description" content="Skydda din fastighet mot fåglar med Bird Blocker och andra förebyggande installationer. Vi erbjuder effektiva lösningar för att undvika skador och smitta." />
         <meta name="keywords" content="bird blocker, fågelsäkring, sanering fågelträck, skydda tak mot fåglar, fågelpinnar" />
       </Helmet>
