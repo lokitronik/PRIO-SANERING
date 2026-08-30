@@ -1,4 +1,5 @@
 import React from "react";
+import logoImg from "../assets/logo.png";
 
 interface LogoProps {
   className?: string;
@@ -12,7 +13,7 @@ export default function Logo({
   return (
     <div className={`flex items-center ${className}`}>
       <img
-        src="/logo.png"
+        src={logoImg}
         alt="NEXE SPECIALSANERING"
         className={`${imgClassName} object-contain select-none`}
         referrerPolicy="no-referrer"
